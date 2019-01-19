@@ -1,0 +1,9 @@
+/* CIT 230 - Assignment Portal CSS */
+
+* { margin: 0; box-sizing: border-box; } 
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 512px;
+}
