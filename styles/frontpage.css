@@ -32,12 +32,17 @@ header, footer, footer a {
 
 header img {
     width: auto;
-    height: 150px;
+    height: 175px;
     float: right;
+    margin-left: 0px;
 }
 
 main h2 {
     text-align: left;
+}
+
+main ul li {
+    padding: 5px;
 }
 
 footer {
