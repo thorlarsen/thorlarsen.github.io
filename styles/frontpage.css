@@ -6,24 +6,22 @@ body {
     font-size: 16px; 
     line-height: 32px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #bbb;
+    color: black;
 }
 
 h1 {
     font-size: 1.8rem;
-    color: #bbb;
 }
 
 h2 {
     font-size: 1.5rem ;
-    text-align: center;
     border-bottom: 1px solid #bbb;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 512px;
+    max-width: 640px;
 }
 
 header, footer, footer a {
@@ -33,9 +31,13 @@ header, footer, footer a {
 }
 
 header img {
-    width: 128px;
-    height: auto;
+    width: auto;
+    height: 150px;
     float: right;
+}
+
+main h2 {
+    text-align: left;
 }
 
 footer {
