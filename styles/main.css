@@ -28,16 +28,19 @@ header, main, footer {
     max-width: 640px;
 }
 
-header, footer, footer a {
+header, footer {
     text-align: center;
-    background-color: #003153;
-    color: whitesmoke;
 }
 
 header img {
     width: auto;
     height: 175px;
     float: right;
+}
+
+header {
+    background-color: #003153;
+    color: whitesmoke; 
 }
 
 main h2 {
@@ -50,4 +53,15 @@ main ul li {
 
 footer {
     font-size: .75rem;
+    background-color: #daa200;
+    color: #090700
+}
+
+footer a:link {color: #090700;}
+
+footer a:visited {color: #503b00;}
+
+footer a:hover {
+    color: #daa200;
+    background-color: #090700;
 }
