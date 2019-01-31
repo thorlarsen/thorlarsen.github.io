@@ -6,10 +6,7 @@ body {
     font-size: 16px; 
     line-height: 32px;
 /*    font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
     color: black;
 }
 
@@ -27,11 +24,12 @@ header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
     max-width: 640px;
+
 }
 
 header {
     background-color: #003153;
-    /* color: whitesmoke; */
+    font-family: "Quattrocento", serif;
     text-align: left;
     color: #76a2b9;
 }
