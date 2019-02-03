@@ -23,6 +23,12 @@ header {
     color: #012f4f;
 }
 
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
 header img {
     width: 100px;
     height: auto; 
