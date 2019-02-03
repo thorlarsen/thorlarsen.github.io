@@ -1,2 +1,80 @@
-/* CSS file for lesson 4, "Start the Town Page Build."
+/* CSS file for lesson 4, "Start the Town Page Build." */
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    /* padding: .5rem; */
+    max-width: 600px;
+}
+
+header {
+    background-color: #4c99d3;
+    text-align: center;
+    color: #012f4f;
+}
+
+header img {
+    width: 100px;
+    height: auto; 
+    float: left;
+}
+
+.motto {
+    font-style: italic;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4c99d3;
+}
+
+nav li {
+    font-size: 1.3em;
+    padding: 0px 25px;
+}
+  
+nav li a {
+    display: block;
+    color: #012f4f;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a.active {
+    background-color: #012f4f;
+    color: #4c99d3;
+}
+
+nav li a:hover {
+    background-color: #b78900;
+    color: #ffd350;
+}
+
+footer {
+    background-color: #ffd350;
+    color: #b78900;
+    text-align: center;
+}
+
+footer a:link {color: #090700;}
+
+footer a:visited {color: #503b00;}
+
+footer a:hover {
+    color: #daa200;
+    background-color: #090700;
+}
 
