@@ -1,0 +1,91 @@
+/* CSS file for lesson 5, small pages */
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header, main, footer {
+    max-width: 600px;
+}
+
+header {
+    margin: 1.25rem auto 0 auto;
+    background-color: #4c99d3;
+    text-align: center;
+    color: #012f4f;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+header img {
+    width: 100px;
+    height: auto; 
+    float: left;
+}
+
+.motto {
+    font-style: italic;
+}
+
+main, footer { margin: 0 auto 0 auto; }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #4c99d3;
+    border: 1px solid #012f4f;
+}
+
+nav li {
+    font-size: 1.3em;
+    /* padding: 0px 25px; */
+    border-bottom: 1px solid #012f4f;
+}
+
+nav li:last-child {border-bottom: none;}
+  
+nav li a {
+    display: block;
+    color: #012f4f;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a.active {
+    background-color: #012f4f;
+    color: #4c99d3;
+}
+
+nav li a:hover {
+    background-color: #b78900;
+    color: #ffd350;
+}
+
+footer {
+    background-color: #ffd350;
+    color: #b78900;
+    text-align: center;
+}
+
+footer a:link {color: #090700;}
+
+footer a:visited {color: #503b00;}
+
+footer a:hover {
+    color: #daa200;
+    background-color: #090700;
+}
+
