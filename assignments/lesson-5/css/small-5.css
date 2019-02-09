@@ -11,18 +11,14 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Open Sans', sans-serif;
 }
 
-header, main, footer {
-    max-width: 600px;
-}
-
 header {
-    margin: 1.25rem auto 0 auto;
-    background-color: #4c99d3;
+    margin: 0;
+    background-color: #84B9DF;
     text-align: center;
-    color: #012f4f;
+    color: #063a5e;
 }
 
-header img, .headings {
+header img, #headings {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 5px;
@@ -32,10 +28,13 @@ header img {
     width: 100px;
     height: auto; 
     float: left;
+    /* background-color: #4c98d37a; */
 }
 
 .motto {
-    font-style: italic;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 main, footer { margin: 0 auto 0 auto; }
@@ -44,29 +43,30 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #4c99d3;
-    border: 1px solid #012f4f;
+    border: 1px solid #063a5e;
+    background-color: #84B9DF;
 }
 
 nav li {
     font-size: 1.3em;
-    /* padding: 0px 25px; */
-    border-bottom: 1px solid #012f4f;
+    border-bottom: 1px solid #063a5e;
 }
 
-nav li:last-child {border-bottom: none;}
+nav li:last-child {
+    border-bottom: none;
+}
   
 nav li a {
     display: block;
-    color: #012f4f;
+    color: #063a5e;
     text-align: center;
     text-decoration: none;
     padding: 8px 16px;
 }
 
 nav a.active {
-    background-color: #012f4f;
-    color: #4c99d3;
+    background-color: #063a5e;
+    color: #84B9DF;
 }
 
 nav li a:hover {
@@ -89,3 +89,6 @@ footer a:hover {
     background-color: #090700;
 }
 
+@media screen and (max-width: 501px) {
+    
+}
