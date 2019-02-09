@@ -54,7 +54,12 @@
         clear: both;
     }
     
-    article#idaholakes>img {
+    #mainstimage img {
+        width: 800px;
+        height: auto;
+    }
+    
+    article#idaholakes img {
         float: right;
         width: 50%;
         height: 50%;
