@@ -16,7 +16,6 @@
         width: 150px;
         height: auto; 
         float: left;
-        /* background-color: #4c98d37a; */
     }
     
     header h1 {
@@ -43,6 +42,7 @@
 
     nav li:last-child {
         border-right: none;
+    }
 
     nav li a {
         display: block;
@@ -52,6 +52,12 @@
 
     .clear {
         clear: both;
+    }
+    
+    article#idaholakes>img {
+        float: right;
+        width: 50%;
+        height: 50%;
     }
 
 }

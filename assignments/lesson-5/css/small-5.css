@@ -90,5 +90,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 501px) {
+
+    article#idaholakes>img {
+        float: right;
+        width: 50%;
+        height: 50%;
+    }
     
 }
