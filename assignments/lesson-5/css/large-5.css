@@ -1,0 +1,63 @@
+@media screen and (min-width: 501px) {
+    
+    header, main, footer {
+        margin: 1.25rem auto;
+        /* padding: .5rem; */
+        max-width: 800px;
+    }
+    
+    header img, #headings {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1em 0 0 2.5em;
+    }
+    
+    header img {
+        width: 150px;
+        height: auto; 
+        float: left;
+    }
+    
+    header h1 {
+        padding: 1.2em auto 0 auto;
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: .75em 0 0 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #84B9DF;
+        border: 1px solid #165d90;
+    }
+
+    nav li {
+        /* display: inline; */
+        float: left;
+        border-bottom: none;
+        border-right: 1px solid #165d90;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        background-color: #84b9df;
+        padding: 12px 18px;
+    }
+
+    .clear {
+        clear: both;
+    }
+    
+    article#idaholakes>img {
+        float: right;
+        width: 50%;
+        height: 50%;
+    }
+
+}
