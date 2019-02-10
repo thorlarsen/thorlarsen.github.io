@@ -28,7 +28,6 @@ header img {
     width: 100px;
     height: auto; 
     float: left;
-    /* background-color: #4c98d37a; */
 }
 
 .motto {
@@ -36,6 +35,8 @@ header img {
     margin: 0;
     padding: 0;
 }
+
+.menu { font-size: 1.3em; }
 
 main, footer { margin: 0 auto 0 auto; }
 
@@ -74,9 +75,37 @@ nav li a:hover {
     color: #ffd350;
 }
 
-footer {
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.weather {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background-color: #84b9dfdd;
+    border: 1px solid #063a5e;
+    padding:1em;
+    box-shadow: 0 0 20px #935300;
+}
+
+.weather h3, .weather p {
+    color: #063a5e
+}
+
+.contact {
     background-color: #ffd350;
-    color: #b78900;
+    color: #090700;
+}
+.socialicon {
+    height: 50px;
+    width: auto;
+}
+
+footer {
+    background-color: #daa200;
+    color: #503b00;
     text-align: center;
 }
 
@@ -91,10 +120,20 @@ footer a:hover {
 
 @media screen and (max-width: 501px) {
 
-    article#idaholakes>img {
-        float: right;
-        width: 50%;
-        height: 50%;
+    .forecast {
+        display: none;
     }
-    
+    .herodiv img {
+        width: 90%;
+        height: 90%;
+        margin: 20px;
+    }
+
+    #idaholakes>img {
+        float: none;
+        width: 90%;
+        height: 90%;
+        margin: 20px 20px;
+    }
+
 }

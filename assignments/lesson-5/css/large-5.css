@@ -24,6 +24,8 @@
         font-style: italic;
     }
 
+    .menu { display: none; }
+
     nav ul {
         list-style-type: none;
         margin: .75em 0 0 0;
@@ -54,15 +56,18 @@
         clear: both;
     }
     
-    #mainstimage img {
+    .herodiv img {
         width: 800px;
         height: auto;
     }
     
-    article#idaholakes img {
+    #idaholakes img {
         float: right;
         width: 50%;
         height: 50%;
+        margin: 5px 0 20px 5px;
     }
+
+    #idaholakes 
 
 }
