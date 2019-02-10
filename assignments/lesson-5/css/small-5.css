@@ -97,6 +97,7 @@ nav li a:hover {
 .contact {
     background-color: #ffd350;
     color: #090700;
+    margin: 0 20px 0 20px;
 }
 .socialicon {
     height: 50px;
@@ -126,14 +127,14 @@ footer a:hover {
     .herodiv img {
         width: 90%;
         height: 90%;
-        margin: 20px;
+        margin: 20px 0 20px 0;
     }
 
     #idaholakes>img {
         float: none;
         width: 90%;
         height: 90%;
-        margin: 20px 20px;
+        margin: 20px 0 20px 0;
     }
 
 }
