@@ -1,5 +1,5 @@
-function todaysDate() {
-    let today = new Date;
+//Display current date and copyright year in Weather site footer
+    let today = new Date();
     
     let weekday = new Array(7);
     weekday[0] = 'Sunday';
@@ -28,4 +28,5 @@ function todaysDate() {
                + month[today.getMonth()] + ' ' + today.getFullYear();
 
     document.getElementById('currentDate').innerHTML = fullDate;
-}
+    document.getElementById('copyrightYear').innerHTML = today.getFullYear();
+
