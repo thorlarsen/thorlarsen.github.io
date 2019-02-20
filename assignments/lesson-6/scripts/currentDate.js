@@ -24,7 +24,7 @@
     month[10] = 'November';
     month[12] = 'December';
 
-    fullDate = weekday[today.getDay()] + ', ' + today.getDate() + ' ' 
+    let fullDate = weekday[today.getDay()] + ', ' + today.getDate() + ' ' 
                + month[today.getMonth()] + ' ' + today.getFullYear();
 
     document.getElementById('currentDate').innerHTML = fullDate;
