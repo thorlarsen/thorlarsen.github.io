@@ -1,0 +1,162 @@
+/* CSS file for lesson 5, small pages */
+
+body { 
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+}
+
+p { padding: 5px; }
+
+header {
+    display: flex;
+    margin: 0;
+    background-color: #84B9DF;
+    text-align: center;
+    color: #063a5e;
+}
+
+header img, #headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px 0 0 0;
+}
+
+header img {
+    /* width: 100px;
+    height: auto; */
+    float: left;
+}
+
+header h1 { font-style: italic; }
+
+.motto {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.hbMenu { font-size: 1.1em; }
+
+main, footer { margin: 0 auto 0 auto; }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #063a5e;
+    background-color: #84B9DF;
+}
+
+nav li {
+    font-size: 1.3em;
+    border-bottom: 1px solid #063a5e;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+  
+nav li a {
+    display: block;
+    color: #063a5e;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a.active {
+    background-color: #063a5e;
+    color: #84B9DF;
+}
+
+nav li a:hover {
+    background-color: #ffd350;
+    color: #090700;
+}
+
+
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.weather {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background-color: #ffd350dd;
+    border: 1px solid #090700;
+    padding:1em;
+    box-shadow: 0 0 20px #935300;
+}
+
+.weather h3, .weather p {
+    color: #090700
+}
+
+.byline { padding: 5px; }
+
+.contact {
+    background-color: #ffd350;
+    color: #090700;
+    /* margin: 0 20px 0 20px; */
+}
+
+.contact p { padding: 5px; }
+
+.socialicon {
+    height: 50px;
+    width: auto;
+}
+
+.contact iframe { 
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+footer {
+    background-color: #84B9DF;
+    color: #063a5e;
+    text-align: center;
+}
+
+footer a:link {color: #090700;}
+
+footer a:visited {color: #503b00;}
+
+footer a:hover {
+    color: #daa200;
+    background-color: #090700;
+}
+
+@media screen and (max-width: 500px) {
+
+    .forecast {
+        display: none;
+    }
+
+    .hidden { display: none; }
+
+    .herodiv img {
+        /* width: 90%; */
+        /* height: 90%; */
+        margin: 20px 0 20px 0;
+    }
+
+    #story1>img {
+        float: none;
+        /* width: 90%; */
+        /* height: 90%; */
+        margin: 20px 0 20px 0;
+    }
+
+}
