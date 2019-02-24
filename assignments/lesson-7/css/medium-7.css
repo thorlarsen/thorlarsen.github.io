@@ -1,0 +1,7 @@
+/* For medium size viewports */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    
+    .imagegallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}

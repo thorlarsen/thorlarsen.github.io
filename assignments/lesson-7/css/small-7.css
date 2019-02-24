@@ -16,7 +16,8 @@ p { padding: 5px; }
 
 header {
     display: flex;
-    margin: 0;
+    flex-flow: row wrap;
+    margin: 5px 5px 0 5px;
     background-color: #84B9DF;
     text-align: center;
     color: #063a5e;
@@ -28,12 +29,6 @@ header img, #headings {
 	margin: 5px 0 0 0;
 }
 
-header img {
-    /* width: 100px;
-    height: auto; */
-    float: left;
-}
-
 header h1 { font-style: italic; }
 
 .motto {
@@ -42,28 +37,31 @@ header h1 { font-style: italic; }
     padding: 0;
 }
 
-.hbMenu { font-size: 1.1em; }
-
-main, footer { margin: 0 auto 0 auto; }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border: 1px solid #063a5e;
+nav {
+    margin: 0 5px 0 5px;
     background-color: #84B9DF;
 }
 
-nav li {
-    font-size: 1.3em;
-    border-bottom: 1px solid #063a5e;
+.navbar { 
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em; 
+    border-top: 1px;
+    list-style-type: none;
 }
 
-nav li:last-child {
-    border-bottom: none;
+.navbar li {
+    font-size: 1.3em;
+    display: block;
 }
-  
-nav li a {
+
+.navbar li:first-child { display: block; }
+
+.responsive li { display: none; }
+
+.navbar li a {
     display: block;
     color: #063a5e;
     text-align: center;
@@ -71,17 +69,17 @@ nav li a {
     padding: 8px 16px;
 }
 
-nav a.active {
+.navbar a.active {
     background-color: #063a5e;
     color: #84B9DF;
 }
 
-nav li a:hover {
+.navbar li a:hover {
     background-color: #ffd350;
     color: #090700;
 }
 
-
+main, footer { margin: 0 auto 0 auto; }
 
 .herodiv {
     margin: 10px auto;
@@ -138,13 +136,30 @@ footer a:hover {
     background-color: #090700;
 }
 
+.imagegallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+}
+
+.imagegallery figure { 
+    margin: 0; 
+    text-align: center;
+    
+}
+
+.imagegallery img {
+    width: 300px;
+    height: auto;
+}
+
+
 @media screen and (max-width: 500px) {
 
     .forecast {
         display: none;
     }
-
-    .hidden { display: none; }
 
     .herodiv img {
         /* width: 90%; */

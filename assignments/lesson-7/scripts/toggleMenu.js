@@ -1,3 +1,3 @@
-function hamburgerMenu() {
-    document.getElementById("hiddenMenu").classList.toggle("hidden");
+function toggleMenu() {
+    document.getElementsByClassName('navbar')[0].classList.toggle('responsive');
 }

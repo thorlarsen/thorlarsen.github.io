@@ -1,11 +1,16 @@
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 801px) {
     
-    header, main, footer {
+    header, main, nav, footer {
         margin: 1.25rem auto;
         /* padding: .5rem; */
-        max-width: 800px;
+        max-width: 1200px;
     }
     
+    header { 
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
     header img, #headings {
         display: inline-block;
         vertical-align: middle;
@@ -24,32 +29,20 @@
         font-style: italic;
     }
 
+    /*nav { max-width: 1200px; }*/
+
     .hbMenu { display: none; }
 
-    nav ul {
-        list-style-type: none;
-        margin: .75em 0 0 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #84B9DF;
-        border: 1px solid #165d90;
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
-
-    nav li {
-        /* display: inline; */
-        float: left;
-        border-bottom: none;
-        border-right: 1px solid #165d90;
-    }
-
-    nav li:last-child {
-        border-right: none;
-    }
-
-    nav li a {
+    
+    .navbar li:first-child { display: none; }
+    
+    .navbar li  {
         display: block;
-        background-color: #84b9df;
-        padding: 12px 18px;
     }
 
     .clear {
@@ -57,7 +50,7 @@
     }
     
     .herodiv img {
-        width: 800px;
+        width: auto;
         height: auto;
     }
     
@@ -75,4 +68,12 @@
         margin: 5px 5px 10px 5px;
     }
 
+    /* Image Gallery */
+    .imagegallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .effects:hover {
+        box-shadow: 0 0 50px #333333;
+    }
 }
