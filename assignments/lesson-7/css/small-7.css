@@ -97,18 +97,27 @@ main, footer { margin: 0 auto 0 auto; }
 }
 
 .weather h3, .weather p {
-    color: #090700
+    display: block;
+    color: #090700;
+    margin: 5px;
 }
 
-.byline { padding: 5px; }
+.byline { 
+    padding: 5px;
+    font-style: italic; 
+}
 
 .contact {
     background-color: #ffd350;
     color: #090700;
     /* margin: 0 20px 0 20px; */
+    padding: 20px;
 }
 
-.contact p { padding: 5px; }
+.contact p { 
+    padding: 5px;
+    margin: .75em; 
+}
 
 .socialicon {
     height: 50px;
@@ -169,8 +178,8 @@ footer a:hover {
 
     #story1>img {
         float: none;
-        /* width: 90%; */
-        /* height: 90%; */
+        width: 90%; 
+        height: 90%; 
         margin: 20px 0 20px 0;
     }
 
