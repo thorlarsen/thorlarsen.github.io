@@ -86,6 +86,11 @@ main, footer { margin: 0 auto 0 auto; }
     position: relative;
 }
 
+.herodiv img {
+    width: 100%;
+    height: auto;
+}
+
 .weather {
     position: absolute;
     top: 25px;
@@ -108,20 +113,29 @@ main, footer { margin: 0 auto 0 auto; }
 }
 
 .contact {
+    clear: both;
+    display: flex;
     background-color: #ffd350;
     color: #090700;
     /* margin: 0 20px 0 20px; */
     padding: 20px;
 }
 
-.contact p { 
+.contact p, .contact h2 { 
     padding: 5px;
     margin: .75em; 
 }
 
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .socialicon {
     height: 50px;
     width: auto;
+    padding: 20px;
 }
 
 .contact iframe { 
