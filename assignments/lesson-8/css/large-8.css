@@ -1,0 +1,79 @@
+@media screen and (min-width: 801px) {
+    
+    header, main, nav, footer {
+        margin: 1.25rem auto;
+        /* padding: .5rem; */
+        max-width: 1200px;
+    }
+    
+    header { 
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    header img, #headings {
+        display: inline-block;
+        vertical-align: middle;
+        margin: .5em 0 0 .5em;
+    }
+    
+    header img {
+        width: 90px;
+        height: auto; 
+        float: left;
+    }
+    
+    header h1 {
+        padding: 1.2em auto 0 auto;
+        font-size: 2em;
+        font-style: italic;
+    }
+
+    /*nav { max-width: 1200px; }*/
+
+    .hbMenu { display: none; }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .navbar li:first-child { display: none; }
+    
+    .navbar li  {
+        display: block;
+    }
+
+    .clear {
+        clear: both;
+    }
+    
+    .herodiv img {
+        width: auto;
+        height: auto;
+    }
+    
+    #story1 img {
+        float: right;
+        width: 50%;
+        height: 50%;
+        margin: 5px 0 20px 5px;
+    }
+
+    .contact iframe { 
+        float: right;
+        width: 300px;
+        height: 225px;
+        margin: 5px 5px 10px 5px;
+    }
+
+    /* Image Gallery */
+    .imagegallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .effects:hover {
+        box-shadow: 0 0 50px #333333;
+    }
+}

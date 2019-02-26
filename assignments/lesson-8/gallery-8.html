@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="Weather site project">
+    <title>ActiveWeather.info | Gallery</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-7.css" rel="stylesheet">
+    <link href="css/large-7.css" rel="stylesheet">
+    <link href="css/medium-7.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure>
+            <source media="(min-width: 501px)" srcset="images/suncloudlogo150.jpg">
+            <source media="(max-width: 500px)" srcset="images/suncloudlogo75.jpg">
+            <img id="headings" src="images/suncloudlogo75.jpg" alt="ActiveWeather.info Logo">
+        </figure>
+        
+        <section>
+            <h1>ActiveWeather.info</h1>
+            <div class="motto"><p>Weather fit for the web</p></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navbar responsive">
+            <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#sodasprings">Soda Springs</a></li>
+            <li><a href="#fishhaven">Fish Haven</a></li>
+            <li><a href="#stormcenter">Storm Center</a></li>
+            <li><a class=active href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Weather Image Gallery</h2>
+            <div class="imagegallery">
+                <figure>
+                    <img class="effects" src="images/gallery/coleridge-nebraska-tornado-kelly-lange-300w.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+                <figure>
+                    <img class="effects" src="images/gallery/ski-alpii-elvetieni-poze-desktop_300w_h.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+                <figure>
+                    <img class="effects" src="images/gallery/agriculture-colors-countryside-1253748-300w.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+                <figure>
+                    <img class="effects" src="images/gallery/kilimanjaro-weather-300w.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+                <figure>
+                    <img class="effects" src="images/gallery/lightning_1280-350w.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+                <figure>
+                    <img class="effects" src="images/gallery/weather-scotland-eriskay-pony-300w.jpg">
+                    <figcaption>Lorem ipsum dolor, sit amet consectetur.</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id=copyrightYear></span> Thor Larsen - Houston, Texas - <a href="http://www.byui.edu/online">BYU-Idaho Online</a></p>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/toggleMenu.js"></script>
+</body>
+</html>
