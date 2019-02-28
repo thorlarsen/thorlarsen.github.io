@@ -115,6 +115,8 @@ main, footer { margin: 0 auto 0 auto; }
 .contact {
     clear: both;
     display: flex;
+    flex-direction: column;
+    align-content: center;
     background-color: #ffd350;
     color: #090700;
     /* margin: 0 20px 0 20px; */
@@ -139,7 +141,7 @@ main, footer { margin: 0 auto 0 auto; }
 }
 
 .contact iframe { 
-    float: left;
+    /* float: left; */
     width: 200px;
     height: 150px;
 }
@@ -196,5 +198,6 @@ footer a:hover {
         height: 90%; 
         margin: 20px 0 20px 0;
     }
+
 
 }
