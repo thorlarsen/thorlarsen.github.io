@@ -5,13 +5,13 @@ body {
 table {
     border-collapse: collapse;
     border: 2px solid darkgrey;
-    font-size: 1.2em;
+    font-size: .95em;
     box-shadow: 10px 10px 15px -1px #628ca6;
 }
 
 thead{   
-  font-size: x-large;
-}
+  font-size: 1.6em;
+} 
 
 thead th{
     color: black;
@@ -24,8 +24,12 @@ tbody { background-color: #e7ffed; }
 td { text-align: center; }
 
 td, th { 
-    padding: 10px;
+    padding: 8px 7px 8px 7px ;
     border: 2px solid silver;
+}
+
+th { 
+    letter-spacing: 2px;
 }
 
 tr:nth-child(even) { background-color: #e7f0ed; }
