@@ -24,12 +24,13 @@ tbody { background-color: #e7ffed; }
 td { text-align: center; }
 
 td, th { 
-    padding: 8px 7px 8px 7px ;
-    border: 2px solid silver;
+    padding: 8px 10px;
+    border: 1px solid silver;
 }
 
 th { 
-    letter-spacing: 2px;
+    font-weight: 700;
+    letter-spacing: 1.1px
 }
 
 tr:nth-child(even) { background-color: #e7f0ed; }
