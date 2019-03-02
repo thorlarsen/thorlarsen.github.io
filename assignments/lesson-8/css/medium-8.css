@@ -19,4 +19,6 @@
         grid-gap: 10px 20px;
     }
 
+    .contact { flex-direction: row; }
+
 }
