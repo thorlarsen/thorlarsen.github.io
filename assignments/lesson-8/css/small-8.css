@@ -191,6 +191,7 @@ legend {
 form label.top {
     display: block;
     font-size: 1rem;
+    padding: .5rem 0 .25rem 0;
 }
 
 form label.top input, form label.top select {
@@ -204,6 +205,10 @@ form label.top input, form label.top select {
     max-width: 20rem;
 }
 
+form label.top input.slide {
+    max-width: 10rem;
+    padding: .5rem 0 0 0;
+}
 
 @media screen and (max-width: 500px) {
 

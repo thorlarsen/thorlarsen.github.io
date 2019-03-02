@@ -61,28 +61,26 @@
                     <option value="Thunderstorm"></option>
                     <option value="Tornado"></option>
                 </datalist>
-                <label class="top">Storm Severity (1 to 10): 
-                       <input type="range" name="severity" value="5" min="1"
+                <label class="top">Storm Severity (1 to 10): <span id="ratingvalue">5</span>
+                       <input class="slide" type="range" name="severity" value="5" min="1"
                        max="10" step="1" oninput="adjustRating(this.value)" 
                        onchange="adjustRating(this.value)"></label>
-                    <span id="ratingvalue">5</span>
+                    
                 <label class="top">Storm Region: 
                     <select>
-                        <option value="Select Region..." disabled></option>
-                        <option value="Preston"></option>
-                        <option value="Soda Springs"></option>
-                        <option value="Fish Haven"></option>
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
                     </select>
-                <label class="top">Are you in danger? 
-                    <input type="radio" name="danger" value="Yes">
-                    <span>Yes  </span>
-                    <input type="radio" name="danger" value="No">
-                    <span>No  </span>
-                    <input type="radio" name="danger" value="Maybe">
-                    <span>Maybe  </span>
                 </label>
-                <label class="top">Additional Information: input="text" </label><br>
-                <textarea rows="4" cols="80" name="addinfo" form="reportform"></textarea>
+                <label for="danger" class="top">Are you in danger? </label>
+                    <input type="radio" name="danger" value="Yes">Yes<br>
+                    <input type="radio" name="danger" value="No">No<br>
+                    <input type="radio" name="danger" value="Maybe">Maybe<br>
+                <label for="addinfo" class="top">Additional Information:<br>
+                <textarea rows="8" cols="37" name="addinfo" form="reportform"></textarea>
+                </label>
                 <input type="submit" value="Send my report" >
             </fieldset>
             </form>
