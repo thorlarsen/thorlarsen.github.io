@@ -8,11 +8,12 @@
     <meta name="description" content="Weather site project">
     <title>ActiveWeather.info | Storm Center</title>
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    
     <link href="css/small-8.css" rel="stylesheet">
     <link href="css/large-8.css" rel="stylesheet">
     <link href="css/medium-8.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="css/stormcenter.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -40,7 +41,52 @@
     </nav>
 
     <main>
-
+        <section id="report">
+            <form method="get" action="thankyou.html" id="reportform">
+              <fieldset>
+              <legend>Report Bad Weather in Your Area</legend>
+                <label class="top">Full Name:* <input type="text" name="fullname" required></label>
+                <label class="top">Email: <input type="email" name="email" 
+                       placeholder="someone@gmail.com"></label>
+                <label class="top">Phone Number:* <input type="number" name="phonenum" 
+                       placeholder="1235551234" required></label>
+                <label class="top">Zip Code:* <input type="number" name="zip" required></label>
+                <label class="top">Storm Date: <input type="date" name="stormdate"></label>
+                <label class="top">Storm Type: <input list="storms" name=stormtype></label>
+                <datalist id="storms">
+                    <option value="Blizzard"></option>
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+                <label class="top">Storm Severity (1 to 10): 
+                       <input type="range" name="severity" value="5" min="1"
+                       max="10" step="1" oninput="adjustRating(this.value)" 
+                       onchange="adjustRating(this.value)"></label>
+                    <span id="ratingvalue">5</span>
+                <label class="top">Storm Region: 
+                    <select>
+                        <option value="Select Region..." disabled></option>
+                        <option value="Preston"></option>
+                        <option value="Soda Springs"></option>
+                        <option value="Fish Haven"></option>
+                    </select>
+                <label class="top">Are you in danger? 
+                    <input type="radio" name="danger" value="Yes">
+                    <span>Yes  </span>
+                    <input type="radio" name="danger" value="No">
+                    <span>No  </span>
+                    <input type="radio" name="danger" value="Maybe">
+                    <span>Maybe  </span>
+                </label>
+                <label class="top">Additional Information: input="text" </label><br>
+                <textarea rows="4" cols="80" name="addinfo" form="reportform"></textarea>
+                <input type="submit" value="Send my report" >
+            </fieldset>
+            </form>
+        </section>
         <section class="contact">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112629.21514714143!2d-111.94128591438759!3d42.1144955518364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549773533232" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="address">
@@ -58,7 +104,7 @@
         <p>&copy; <span id=copyrightYear></span> Thor Larsen - Houston, Texas - <a href="http://www.byui.edu/online">BYU-Idaho Online</a></p>
         <span id="currentDate"></span>
     </footer>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/toggleMenu.js"></script>
+<script src="scripts/adjustrating.js"></script>
+
 </body>
 </html>
