@@ -161,6 +161,7 @@ footer a:hover {
     background-color: #090700;
 }
 
+/* ----- Image Galery Styles ----- */
 .imagegallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -174,17 +175,20 @@ footer a:hover {
     
 }
 
-/* ----- Image Galery Styles ----- */
 .imagegallery img {
     width: 100%;
     height: auto;
 }
 
 /* ----- Storm Center Form styles ----- */
+fieldset {
+    border: none;
+}
+
 legend {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: Large;
+    font-size: Larger;
     padding: 5px; 
 }
 
@@ -200,14 +204,45 @@ form label.top input, form label.top select {
     border: solid 1px #aaa;
     border-radius: 4px;
     padding: .75rem;
-    color: #888;
+    color: #000;
     width: 100%;
     max-width: 20rem;
+}
+
+form label.top input:focus, form label.top select:focus {
+    background-color: #ccc;
+    border-color: lightblue;
+    color: #063a5e;
 }
 
 form label.top input.slide {
     max-width: 10rem;
     padding: .5rem 0 0 0;
+}
+
+textarea { border-radius: 4px; }
+
+textarea:focus {
+    background-color: #ccc;
+    border-color: lightblue;
+    color: #063a5e;
+}
+
+form input.button {
+    background-color: #090700;
+    border-color: #ffd350;
+    border-radius: 8px;
+    color: #ffd350;
+    border: none;
+    width: 200px;
+    height: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+form input.button:hover {
+    color: #090700;
+    background-color: #ffd350;
 }
 
 @media screen and (max-width: 500px) {
