@@ -21,4 +21,6 @@
 
     .contact { flex-direction: row; }
 
+    .contact iframe {  width: 45%; }
+
 }

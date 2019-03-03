@@ -64,9 +64,7 @@
     .contact { flex-direction: row; }
     
     .contact iframe { 
-        float: right;
-        width: 300px;
-        height: 225px;
+        width: 45%;
         margin: 5px 5px 10px 5px;
     }
 
