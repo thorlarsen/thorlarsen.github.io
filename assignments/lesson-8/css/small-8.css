@@ -240,7 +240,7 @@ form input.button {
     font-size: 1.1em;
 }
 
-form input.button:hover {
+form input.button:hover, form input.button:active {
     color: #090700;
     background-color: #ffd350;
 }
