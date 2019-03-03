@@ -41,9 +41,8 @@
 
     <main>
         <section id="report">
+            <h2>Report Bad Weather</h2>
             <form method="get" action="thankyou.html" id="reportform">
-              <fieldset>
-              <legend>Report Bad Weather in Your Area</legend>
                 <label class="top">Full Name:* <input type="text" name="fullname" required
                     pattern="[A-Za-z ]{5,}"></label>
                 <label class="top">Email: <input type="email" name="email" 
@@ -79,10 +78,9 @@
                     <input type="radio" name="danger" value="No">No<br>
                     <input type="radio" name="danger" value="Maybe">Maybe<br>
                 <label for="addinfo" class="top">Additional Information:<br>
-                <textarea rows="8" cols="37" name="addinfo" form="reportform"></textarea>
+                <textarea rows="8" cols="37" name="addinfo" id="addinfo" form="reportform"></textarea>
                 </label>
                 <input type="submit" class="button" value="Send my report" >
-            </fieldset>
             </form>
         </section>
         <section class="contact">
