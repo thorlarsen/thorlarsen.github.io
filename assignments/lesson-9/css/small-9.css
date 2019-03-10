@@ -167,6 +167,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ffd350;
 }
 
 #townarticles article {
@@ -174,10 +175,12 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    border: 2px solid;
+    border: 2px solid #063a5e;
     padding: 10px 10px 20px 10px;
     max-width: 350px;
     font-size: 1em;
+    background-image: radial-gradient( white, white, #84B9DF);
+    color: #063a5e;
 }
 
 #townarticles article p:first-of-type { font-style: italic; }
