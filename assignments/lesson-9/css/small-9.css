@@ -175,9 +175,12 @@ footer a:hover {
     align-items: center;
     margin: 10px;
     border: 2px solid;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     max-width: 350px;
+    font-size: 1em;
 }
+
+#townarticles article p:first-of-type { font-style: italic; }
 
 #townarticles article img {
     width: 95%;
