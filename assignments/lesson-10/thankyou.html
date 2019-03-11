@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="Weather site project">
+    <title>ActiveWeather.info | Storm Center</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-9.css" rel="stylesheet">
+    <link href="css/large-9.css" rel="stylesheet">
+    <link href="css/medium-9.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <figure>
+            <source media="(min-width: 501px)" srcset="images/suncloudlogo150.jpg">
+            <source media="(max-width: 500px)" srcset="images/suncloudlogo75.jpg">
+            <img id="headings" src="images/suncloudlogo75.jpg" alt="ActiveWeather.info Logo">
+        </figure>
+        
+        <section>
+            <h1>ActiveWeather.info</h1>
+            <div class="motto"><p>Weather fit for the web</p></div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navbar responsive">
+            <li><a href="#" onclick="toggleMenu()">&equiv; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-9.html">Preston</a></li>
+            <li><a href="#sodasprings">Soda Springs</a></li>
+            <li><a href="#fishhaven">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Thank you!</h2>
+            <p>We appreciate your report.</p>
+        </section>
+        <section class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112629.21514714143!2d-111.94128591438759!3d42.1144955518364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1549773533232" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="address">
+            <h2>ActiveWeather.info</h2>
+            <p id="addy1">101 N State St.</p>
+            <p id="addy2">Preston, ID 83263</p>
+            <span>
+            <a href="https://www.facebook.com/thorlarsen66"><img class=socialicon src="images/facebook-icon.png" alt="Facebook"> </a>
+            <a href="https://twitter.com/Thormyself?lang=en"><img class=socialicon src="images/Twitter-icon.png" alt="Twitter"> </a>
+            </span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id=copyrightYear></span> Thor Larsen - Houston, Texas - <a href="http://www.byui.edu/online">BYU-Idaho Online</a></p>
+        <span id="currentDate"></span>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/toggleMenu.js"></script>
+</body>
+</html>
