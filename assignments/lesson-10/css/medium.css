@@ -7,6 +7,22 @@
         margin: 5px;
     }
 
+    #forecasttable {
+        margin: 5px 0 10px ;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid silver;
+        font-size: .95em;
+        box-shadow: 10px 10px 15px -1px #84B9DF;
+    }
+
+    td, th { 
+        padding: 8px 10px;
+        border: 1px solid silver;
+    }
+    
     #story1 picture {
         float: none;
         width: 25%;

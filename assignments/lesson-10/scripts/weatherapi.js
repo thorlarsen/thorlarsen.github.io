@@ -31,7 +31,7 @@ function showCurrWeather(currWeatherData) {
 
     weatherH3.textContent = 'Weather Summary';
     weatherCurr.textContent = 'Currently: ' + currWeatherData.weather.main;
-    weatherTemp.textContent = 'Temperature: ' + currWeatherData.main.temp.toFixed(0) + '&deg; F';
+    weatherTemp.textContent = 'Temperature: ' + currWeatherData.main.temp.toFixed(0) + '°F';
     weatherHumidity.textContent = 'Humidity: ' + currWeatherData.main.humidity.toFixed(0) + '%';
     // weatherPrecip.textContent = 'Precipitation: ' + currWeatherData.rain.rain3h;
     weatherWind.textContent = 'Wind: ' + currWeatherData.wind.speed.toFixed(0) + ' mph';
@@ -64,15 +64,15 @@ function showForecast(forecastData) {
     }
     
     document.getElementById('day0').innerHTML = fcstDaysArr[0];
-    document.getElementById('high0').innerHTML = fcstHighArr[0].toFixed(0);
+    document.getElementById('high0').innerHTML = fcstHighArr[0].toFixed(0) + '°F'; 
     document.getElementById('day1').innerHTML = fcstDaysArr[1];
-    document.getElementById('high1').innerHTML = fcstHighArr[1].toFixed(0);
+    document.getElementById('high1').innerHTML = fcstHighArr[1].toFixed(0) + '°F';
     document.getElementById('day2').innerHTML = fcstDaysArr[2];
-    document.getElementById('high2').innerHTML = fcstHighArr[2].toFixed(0);
+    document.getElementById('high2').innerHTML = fcstHighArr[2].toFixed(0) + '°F';
     document.getElementById('day3').innerHTML = fcstDaysArr[3];
-    document.getElementById('high3').innerHTML = fcstHighArr[3].toFixed(0);
+    document.getElementById('high3').innerHTML = fcstHighArr[3].toFixed(0) + '°F';
     document.getElementById('day4').innerHTML = fcstDaysArr[4];
-    document.getElementById('high4').innerHTML = fcstHighArr[4].toFixed(0);
+    document.getElementById('high4').innerHTML = fcstHighArr[4].toFixed(0) + '°F';
   
   function getFcstDay(index) {
       now = new Date();

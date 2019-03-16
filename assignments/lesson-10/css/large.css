@@ -29,8 +29,6 @@
         font-style: italic;
     }
 
-    /*nav { max-width: 1200px; }*/
-
     .hbMenu { display: none; }
 
     .navbar {
@@ -53,7 +51,23 @@
         width: 100%;
         height: auto;
     }
-    
+
+    #forecasttable {
+        margin: 5px 0 10px ;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid silver;
+        font-size: .95em;
+        box-shadow: 10px 10px 15px -1px #84B9DF;
+    }
+
+    td, th { 
+        padding: 8px 10px;
+        border: 1px solid silver;
+    }
+
     #story1 img {
         float: right;
         width: 50%;
