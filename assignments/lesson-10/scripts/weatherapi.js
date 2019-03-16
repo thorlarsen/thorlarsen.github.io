@@ -30,7 +30,7 @@ function showCurrWeather(currWeatherData) {
     let weatherWind = document.createElement('p');
 
     weatherH3.textContent = 'Weather Summary';
-    weatherCurr.textContent = 'Currently: ' + currWeatherData.weather.main;
+    weatherCurr.textContent = 'Currently: ' + currWeatherData.weather[0].main;
     weatherTemp.textContent = 'Temperature: ' + currWeatherData.main.temp.toFixed(0) + '°F';
     weatherHumidity.textContent = 'Humidity: ' + currWeatherData.main.humidity.toFixed(0) + '%';
     // weatherPrecip.textContent = 'Precipitation: ' + currWeatherData.rain.rain3h;
@@ -55,11 +55,8 @@ function showForecast(forecastData) {
     var fcstDaysArr = [];
     var fcstHighArr = [];
     for (let j = 0; j < 5 ;j++) {
-      console.log(i);
       fcstDaysArr[j]=getFcstDay(j);
-      console.log(fcstDaysArr[j]);
       fcstHighArr[j] = forecastData.list[i].main.temp;
-      console.log(fcstHighArr[j]);
       i += 8;
     }
     
@@ -77,7 +74,6 @@ function showForecast(forecastData) {
   function getFcstDay(index) {
       now = new Date();
       today = now.getUTCDay() + index;
-      console.log('fcstDay is ', today);
       if (today >= 7) today = today - 7;
       if (today  == 0) return 'Sun';
       else if (today == 1) return 'Mon';
