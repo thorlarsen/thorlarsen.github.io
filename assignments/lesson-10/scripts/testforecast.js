@@ -17,37 +17,27 @@ function showForecast(forecastData) {
   }
   while (!rgex.test(forecastData.list[i].dt_txt));
 
+  var fcstDaysArr = [];
+  var fcstHighArr = [];
   for (let j = 0; j < 5 ;j++) {
-  console.log(i);
-  console.log(getFcstDay(j));
-  let forecastHigh = forecastData.list[i].main.temp;
-  console.log(forecastHigh);
-  i += 8;
+    console.log(i);
+    fcstDaysArr[j]=getFcstDay(j);
+    console.log(fcstDaysArr[j]);
+    fcstHighArr[j] = forecastData.list[i].main.temp;
+    console.log(fcstHighArr[j]);
+    i += 8;
   }
   
-  /* console.log(i);
-  console.log(getFcstDay(1));
-  forecastHigh = forecastData.list[i].main.temp;
-  console.log(forecastHigh);
-  
-  i += 8
-  console.log(i);
-  console.log(getFcstDay(2));
-  forecastHigh = forecastData.list[i].main.temp;
-  console.log(forecastHigh);
-
-  i += 8
-  console.log(i);
-  console.log(getFcstDay(3));
-  forecastHigh = forecastData.list[i].main.temp;
-  console.log(forecastHigh);
-
-  i += 8
-  console.log(i);
-  console.log(getFcstDay(4));
-  forecastHigh = forecastData.list[i].main.temp;
-  console.log(forecastHigh); */
-
+  document.getElementById('day0').innerHTML = fcstDaysArr[0];
+  document.getElementById('high0').innerHTML = fcstHighArr[0].toFixed(0);
+  document.getElementById('day1').innerHTML = fcstDaysArr[1];
+  document.getElementById('high1').innerHTML = fcstHighArr[1].toFixed(0);
+  document.getElementById('day2').innerHTML = fcstDaysArr[2];
+  document.getElementById('high2').innerHTML = fcstHighArr[2].toFixed(0);
+  document.getElementById('day3').innerHTML = fcstDaysArr[3];
+  document.getElementById('high3').innerHTML = fcstHighArr[3].toFixed(0);
+  document.getElementById('day4').innerHTML = fcstDaysArr[4];
+  document.getElementById('high4').innerHTML = fcstHighArr[4].toFixed(0);
 
 function getFcstDay(index) {
     now = new Date();
