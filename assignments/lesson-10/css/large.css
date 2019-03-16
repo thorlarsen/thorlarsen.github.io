@@ -68,6 +68,10 @@
         border: 1px solid silver;
     }
 
+    th {
+        background-color: #ffd350;
+    }
+
     #story1 img {
         float: right;
         width: 50%;
