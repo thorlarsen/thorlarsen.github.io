@@ -22,6 +22,10 @@
         padding: 8px 10px;
         border: 1px solid silver;
     }
+
+    th {
+        background-color: #ffd350;
+    }
     
     #story1 picture {
         float: none;
