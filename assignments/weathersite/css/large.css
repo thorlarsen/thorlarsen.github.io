@@ -1,0 +1,107 @@
+@media screen and (min-width: 801px) {
+    
+    header, main, nav, footer {
+        margin: 1.25rem auto;
+        /* padding: .5rem; */
+        max-width: 1200px;
+    }
+    
+    header { 
+        margin-bottom: 0;
+        justify-content: center;
+    }
+
+    header img, #headings {
+        display: inline-block;
+        vertical-align: middle;
+        margin: .5em 0 0 .5em;
+    }
+    
+    header img {
+        width: 90px;
+        height: auto; 
+        float: left;
+    }
+    
+    header h1 {
+        padding: 1.2em auto 0 auto;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 900;
+    }
+
+    .hbMenu { display: none; }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    .navbar li:first-child { display: none; }
+    
+    .navbar li  {
+        display: block;
+    }
+
+    .current {
+        clear: both;
+        margin: 5px;
+    }
+    
+    .herodiv img {
+        width: 100%;
+        height: auto;
+    }
+
+    #forecasttable {
+        margin: 5px 5px 10px ;
+    }
+
+    table {
+        border-collapse: collapse;
+        border: 2px solid silver;
+        font-size: .95em;
+        box-shadow: 10px 10px 15px -1px #84B9DF;
+    }
+
+    td, th { 
+        padding: 8px 10px;
+        border: 1px solid silver;
+    }
+
+    th {
+        background-color: #ffd350;
+    }
+
+    #story1 img {
+        float: right;
+        width: 50%;
+        height: 50%;
+        margin: 5px 5px 20px 5px;
+    }
+
+    .contact { flex-direction: row; }
+    
+    .contact iframe { 
+        width: 45%;
+        margin: 5px 5px 10px 5px;
+    }
+
+    /* Town Articles stypes */
+    #townarticles {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    /* Image Gallery */
+    .imagegallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .effects:hover {
+        box-shadow: 0 0 50px #333333;
+    }
+}
