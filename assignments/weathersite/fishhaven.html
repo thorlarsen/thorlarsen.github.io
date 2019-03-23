@@ -14,7 +14,7 @@
     <link href="css/large.css" rel="stylesheet">
     <link href="css/medium.css" rel="stylesheet">
 </head>
-<body>
+<body onLoad="doWeather(5585010)">
     <header>
         <picture>
             <source media="(min-width: 501px)" srcset="images/suncloudlogo150.jpg">
@@ -53,32 +53,12 @@
                     <!--Dynamically created html from weatherapi.js-->
                 </article>
             </div>
-            <section id="forecasttable">
-                <h3>Five day forecast</h3>
-                <!--th and td values dynamically filled by weatherapi.js-->
-                <table>  
-                    <thead>
-                          <tr>
-                            <th>Day</th>
-                            <th id=day0></th>
-                            <th id=day1></th>
-                            <th id=day2></th>
-                            <th id=day3></th>
-                            <th id=day4></th>
-                          </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>High</td>
-                            <td id=high0></td>
-                            <td id=high1></td>
-                            <td id=high2></td>
-                            <td id=high3></td>
-                            <td id=high4></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>  
+            <section> 
+                    <h3>Five day forecast</h3>
+                    <div id="forecasttable">
+                    <!--Dynamically populated from weatherapi.js--> 
+                    </div>
+                </section>  
             <article id="story1">
                 <picture>
                     <img src="images/cutthroattrout.jpg" alt="Bear Lake Bonneville Cutthroat Trout">

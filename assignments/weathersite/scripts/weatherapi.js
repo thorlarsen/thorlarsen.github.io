@@ -1,27 +1,31 @@
-let currWeatherRequestURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=0361f54f515c1cb51a7f419fe2f8d779';
-let currWeatherRequest = new XMLHttpRequest();
-currWeatherRequest.open('GET', currWeatherRequestURL);
-currWeatherRequest.responseType = 'json';
-currWeatherRequest.send();
+function doWeather(cityId) {
+  let currUrlBuild = 'https://api.openweathermap.org/data/2.5/weather?id=' + cityId + '&units=imperial&appid=0361f54f515c1cb51a7f419fe2f8d779';
+  let currWeatherRequestURL = currUrlBuild;
+  let currWeatherRequest = new XMLHttpRequest();
+  currWeatherRequest.open('GET', currWeatherRequestURL);
+  currWeatherRequest.responseType = 'json';
+  currWeatherRequest.send();
 
-currWeatherRequest.onload = function () {
+  currWeatherRequest.onload = function () {
     let currWeatherData = currWeatherRequest.response;
     showCurrWeather(currWeatherData);
-}
+  }
 
-let forecastRequestURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=0361f54f515c1cb51a7f419fe2f8d779';
-let forecastRequest = new XMLHttpRequest();
-forecastRequest.open('GET', forecastRequestURL);
-forecastRequest.responseType = 'json';
-forecastRequest.send();
+  let fcstUrlBuild = 'https://api.openweathermap.org/data/2.5/forecast?id=' + cityId + '&units=imperial&appid=0361f54f515c1cb51a7f419fe2f8d779';
+  let forecastRequestURL = fcstUrlBuild;
+  let forecastRequest = new XMLHttpRequest();
+  forecastRequest.open('GET', forecastRequestURL);
+  forecastRequest.responseType = 'json';
+  forecastRequest.send();
 
-forecastRequest.onload = function () {
+  forecastRequest.onload = function () {
     let forecastData = forecastRequest.response;
     showForecast(forecastData);
-} 
+  }
 
-function showCurrWeather(currWeatherData) {
+  function showCurrWeather(currWeatherData) {
     let weatherArticle = document.querySelector('.weather');
+    let weatherIcon = document.createElement('img');
     let weatherH3 = document.createElement('h3');
     let weatherCurr = document.createElement('p');
     let weatherTemp = document.createElement('p');
@@ -29,6 +33,10 @@ function showCurrWeather(currWeatherData) {
     // let weatherPrecip = document.createElement('p');
     let weatherWind = document.createElement('p');
 
+    let iconUrl = 'https://openweathermap.org/img/w/' + currWeatherData.weather[0].icon + '.png';
+    weatherIcon.setAttribute('src', iconUrl);
+    weatherIcon.setAttribute('alt', 'Current weather');
+    weatherIcon.setAttribute('id', 'curricon')
     weatherH3.textContent = 'Weather Summary';
     weatherCurr.textContent = 'Currently: ' + currWeatherData.weather[0].main;
     weatherTemp.textContent = 'Temperature: ' + currWeatherData.main.temp.toFixed(0) + '°F';
@@ -37,51 +45,98 @@ function showCurrWeather(currWeatherData) {
     weatherWind.textContent = 'Wind: ' + currWeatherData.wind.speed.toFixed(0) + ' mph';
 
     weatherArticle.appendChild(weatherH3);
+    weatherArticle.appendChild(weatherIcon);
     weatherArticle.appendChild(weatherCurr);
     weatherArticle.appendChild(weatherTemp);
     weatherArticle.appendChild(weatherHumidity);
     // weatherArticle.appendChild(weatherPrecip);
     weatherArticle.appendChild(weatherWind);
-}
+  }
 
-function showForecast(forecastData) {
+  function showForecast(forecastData) {
     let rgex = /[0-9 :]21:00:00/
     let i = -1;
     do {
       i++;
     }
     while (!rgex.test(forecastData.list[i].dt_txt));
-  
-    var fcstDaysArr = [];
-    var fcstHighArr = [];
-    for (let j = 0; j < 5 ;j++) {
-      fcstDaysArr[j]=getFcstDay(j);
-      fcstHighArr[j] = forecastData.list[i].main.temp;
-      i += 8;
+
+    let fcstDate = new Date(forecastData.list[i].dt_txt);
+    let fcstTab = [];
+
+    for (let j = 0; j < 5; j++) {
+      if (i + 5 <= forecastData.list.length - 1) {
+        fcstTab[j] = {
+          icon: forecastData.list[i].weather[0].icon,
+          day: getFcstDay(fcstDate, j),
+          high: forecastData.list[i].main.temp,
+          low: forecastData.list[i + 5].main.temp
+        };
+        i += 8;
+      } else {
+        let last = forecastData.list.length - 1
+        fcstTab[j] = {
+          icon: forecastData.list[i].weather[0].icon,
+          day: getFcstDay(fcstDate, j),
+          high: forecastData.list[i].main.temp,
+          low: forecastData.list[last].main.temp
+        };
+      }
     }
-    
-    document.getElementById('day0').innerHTML = fcstDaysArr[0];
-    document.getElementById('high0').innerHTML = fcstHighArr[0].toFixed(0) + '°F'; 
-    document.getElementById('day1').innerHTML = fcstDaysArr[1];
-    document.getElementById('high1').innerHTML = fcstHighArr[1].toFixed(0) + '°F';
-    document.getElementById('day2').innerHTML = fcstDaysArr[2];
-    document.getElementById('high2').innerHTML = fcstHighArr[2].toFixed(0) + '°F';
-    document.getElementById('day3').innerHTML = fcstDaysArr[3];
-    document.getElementById('high3').innerHTML = fcstHighArr[3].toFixed(0) + '°F';
-    document.getElementById('day4').innerHTML = fcstDaysArr[4];
-    document.getElementById('high4').innerHTML = fcstHighArr[4].toFixed(0) + '°F';
-  
-  function getFcstDay(index) {
-      now = new Date();
-      today = now.getUTCDay() + index;
+
+    let fcstDiv = document.querySelector('#forecasttable');
+    for (let k = 0; k < fcstTab.length; k++) {
+      let fcstArticle = document.createElement('article');
+      let fcstH4 = document.createElement('h4');
+      let fcstIcon = document.createElement('img');
+      let fcstHighP = document.createElement('p');
+      let fcstLowP = document.createElement('p');
+
+      fcstH4.textContent = fcstTab[k].day;
+      iconUrl = 'https://openweathermap.org/img/w/' + fcstTab[k].icon + '.png';
+      fcstIcon.setAttribute('src', iconUrl);
+      fcstIcon.setAttribute('alt', '"Weather icon"');
+      fcstHighP.textContent = 'High: ' + fcstTab[k].high.toFixed(0) + '°F';
+      fcstLowP.textContent = ' Low: ' + fcstTab[k].low.toFixed(0) + '°F';
+
+      fcstArticle.appendChild(fcstH4);
+      fcstArticle.appendChild(fcstIcon);
+      fcstArticle.appendChild(fcstHighP);
+      fcstArticle.appendChild(fcstLowP);
+
+      fcstDiv.appendChild(fcstArticle);
+    }
+    /*
+    let tail = "&deg;F";
+    document.getElementById('day0').innerHTML = fcstTab[0].day;
+    document.getElementById('high0').innerHTML = fcstTab[0].high.toFixed(0) + tail;
+    document.getElementById('lo0').innerHTML = fcstTab[0].low.toFixed(0) + tail;
+    document.getElementById('day1').innerHTML = fcstTab[1].day;
+    document.getElementById('high1').innerHTML = fcstTab[1].high.toFixed(0) + tail;
+    document.getElementById('lo1').innerHTML = fcstTab[1].low.toFixed(0) + tail;
+    document.getElementById('day2').innerHTML = fcstTab[2].day;
+    document.getElementById('high2').innerHTML = fcstTab[2].high.toFixed(0) + tail;
+    document.getElementById('lo2').innerHTML = fcstTab[2].low.toFixed(0) + tail;
+    document.getElementById('day3').innerHTML = fcstTab[3].day;
+    document.getElementById('high3').innerHTML = fcstTab[3].high.toFixed(0) + tail;
+    document.getElementById('lo3').innerHTML = fcstTab[3].low.toFixed(0) + tail;
+    document.getElementById('day4').innerHTML = fcstTab[4].day;
+    document.getElementById('high4').innerHTML = fcstTab[4].high.toFixed(0) + tail;
+    document.getElementById('lo4').innerHTML = fcstTab[4].low.toFixed(0) + tail;
+    */
+
+    function getFcstDay(fcstDate, index) {
+      today = fcstDate.getDay() + index;
+      console.log('fcstDay is ', today);
       if (today >= 7) today = today - 7;
-      if (today  == 0) return 'Sun';
+      if (today == 0) return 'Sun';
       else if (today == 1) return 'Mon';
       else if (today == 2) return 'Tue';
       else if (today == 3) return 'Wed';
       else if (today == 4) return 'Thu';
       else if (today == 5) return 'Fri';
       else return 'Sat';
-      }
-      
     }
+
+  }
+}

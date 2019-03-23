@@ -8,24 +8,22 @@
     }
 
     #forecasttable {
-        margin: 5px 0 10px ;
+        display: flex;
+        margin: 5px 5px 10px ;
     }
 
-    table {
-        border-collapse: collapse;
-        border: 2px solid silver;
-        font-size: .95em;
-        box-shadow: 10px 10px 15px -1px #84B9DF;
+    #forecasttable article {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 2px solid #063a5e;
+        margin: 5px;
+        background-image: radial-gradient( white, white, #84B9DF);
+        box-shadow: 0 0 5px #ffd350;
     }
 
-    td, th { 
-        padding: 8px 10px;
-        border: 1px solid silver;
-    }
-
-    th {
-        background-color: #ffd350;
-    }
+    #forecasttable article p { margin: 5px; }
     
     #story1 picture {
         float: none;
