@@ -19,8 +19,8 @@
         align-items: center;
         border: 2px solid #063a5e;
         margin: 5px;
-        background-image: radial-gradient( white, #84B9DF);
-        box-shadow: 0 0 10px #ffd350;
+        background-image: radial-gradient( white, #ffd350);
+        box-shadow: 0 0 20px #84B9DF;
     }
 
     #forecasttable article p { margin: 5px; }
