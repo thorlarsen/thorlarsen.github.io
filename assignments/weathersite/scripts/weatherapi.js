@@ -88,6 +88,7 @@ function doWeather(cityId) {
     let fcstH3 = document.createElement('h3');
     fcstH3.textContent = 'Five Day Forecast';
     fcstDiv.appendChild(fcstH3);
+    
     for (let k = 0; k < fcstTab.length; k++) {
       let fcstArticle = document.createElement('article');
       let fcstH4 = document.createElement('h4');
