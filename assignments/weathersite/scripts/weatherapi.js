@@ -109,28 +109,9 @@ function doWeather(cityId) {
 
       fcstDiv.appendChild(fcstArticle);
     }
-    /*
-    let tail = "&deg;F";
-    document.getElementById('day0').innerHTML = fcstTab[0].day;
-    document.getElementById('high0').innerHTML = fcstTab[0].high.toFixed(0) + tail;
-    document.getElementById('lo0').innerHTML = fcstTab[0].low.toFixed(0) + tail;
-    document.getElementById('day1').innerHTML = fcstTab[1].day;
-    document.getElementById('high1').innerHTML = fcstTab[1].high.toFixed(0) + tail;
-    document.getElementById('lo1').innerHTML = fcstTab[1].low.toFixed(0) + tail;
-    document.getElementById('day2').innerHTML = fcstTab[2].day;
-    document.getElementById('high2').innerHTML = fcstTab[2].high.toFixed(0) + tail;
-    document.getElementById('lo2').innerHTML = fcstTab[2].low.toFixed(0) + tail;
-    document.getElementById('day3').innerHTML = fcstTab[3].day;
-    document.getElementById('high3').innerHTML = fcstTab[3].high.toFixed(0) + tail;
-    document.getElementById('lo3').innerHTML = fcstTab[3].low.toFixed(0) + tail;
-    document.getElementById('day4').innerHTML = fcstTab[4].day;
-    document.getElementById('high4').innerHTML = fcstTab[4].high.toFixed(0) + tail;
-    document.getElementById('lo4').innerHTML = fcstTab[4].low.toFixed(0) + tail;
-    */
 
     function getFcstDay(fcstDate, index) {
       today = fcstDate.getDay() + index;
-      console.log('fcstDay is ', today);
       if (today >= 7) today = today - 7;
       if (today == 0) return 'Sun';
       else if (today == 1) return 'Mon';
