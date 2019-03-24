@@ -32,6 +32,7 @@ function showTowns(townData) {
           townP3.textContent = 'Population: ' + towns[i].currentPopulation;
           townP4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
           townImg.setAttribute('src', imgFileName(towns[i].name));
+          townImg.setAttribute('alt', 'Picture of ' + towns[i].name)
         
           townArticle.appendChild(townH2);
           townArticle.appendChild(townP1);

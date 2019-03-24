@@ -110,7 +110,7 @@ main, footer { margin: 0 auto 0 auto; }
     flex-flow: column wrap;
     justify-content: space-around; 
     align-items: center;
-    background-color: #ffd350dd;
+    background-color: #84B9DFdd;
     border: 1px solid #090700;
     padding:1em;
     box-shadow: 0 0 20px #935300;
@@ -131,7 +131,7 @@ main, footer { margin: 0 auto 0 auto; }
 
 #curricon { 
     margin: 0;
-    width: 50px
+    width: 60px;
 }
 
 .byline { 
