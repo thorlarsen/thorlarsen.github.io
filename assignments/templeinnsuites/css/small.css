@@ -1,0 +1,102 @@
+/* Global styles */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Archivo Narrow", sans-serif;
+  font-weight: bold;
+}
+
+h2 { font-size: 28px; }
+
+h3 { font-size: 21px; }
+
+h4 { font-size: 18px; }
+
+body {
+  font-family: 'Archivo', sans-serif;    
+  font-size: 14px;
+  background: #f9f3ed; 
+}
+
+/* Class Selector Styles */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0 5px;
+  background-color: #96b9dc;
+  color: #0c1823;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li:first-child { display: block; }
+
+.responsive li { display: none; }
+
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  color: #0c1823;
+}
+
+.navbar a.active {
+  background-color: #0c1823;
+  color: #96b9dc;
+}
+
+.navbar li a:hover {
+    background-color: #0c1823;
+    color: #96b9dc;
+}
+
+.flexcontainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.templesection img {
+  width: 95%;
+  height: auto;
+  max-width: 800px;
+}
+
+.templearticle {
+  max-width: 400px;
+}
+
+/* ID Selector Styles */
+#pagetitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 50px;
+}
+
+#titlebar {
+  display: flex;
+  background-color: #0c1823;
+  color: #96b9dc;
+  margin: 0 5px 0 5px;
+}
+
+#booknowdiv {
+  /* position: asolute;
+  top: 20px;
+  left: 20px; */
+  margin: 10px;
+}
+
+#calltoaction {
+  display: inline-block;
+  background-color: #ff8000;
+  border-radius: 5px;
+  color: #edf3f9;
+  border: none;
+  padding: 20px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;  
+}
+
+

@@ -1,0 +1,22 @@
+/* For large viewports */
+@media screen and (min-width: 801px) {
+  
+  /* Global styles */
+
+  /* Class selector styles */
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+    
+  .navbar li:first-child { display: none; }
+    
+  .navbar li  {
+      display: block;
+  }
+  /* ID selector styles */
+
+}
