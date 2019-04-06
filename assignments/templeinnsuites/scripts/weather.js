@@ -49,7 +49,7 @@ function doWeather(zip) {
     weatherArticle.appendChild(weatherCurr);
     weatherArticle.appendChild(weatherTemp);
     weatherArticle.appendChild(weatherHumidity);
-    weatherArticle.appendChild(weatherPrecip);
+    //weatherArticle.appendChild(weatherPrecip);
     weatherArticle.appendChild(weatherWind);
   }
 

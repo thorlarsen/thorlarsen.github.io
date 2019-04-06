@@ -1,7 +1,7 @@
 [
   {
     "id":90025,
-    "name":"LosAngeles",
+    "name":"Los Angeles",
     "address":
       {
         "street":"10777 Santa Monica Blvd",
@@ -57,7 +57,7 @@
   },
   {
     "id":92122,
-    "name":"SanDiego",
+    "name":"San Diego",
     "address":
       {
         "street":"7474 Charmant Dr",

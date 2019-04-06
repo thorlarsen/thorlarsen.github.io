@@ -39,6 +39,15 @@ function popTempleData(city) {
     servicesArticle.appendChild(svcP1);
     servicesArticle.appendChild(svcP2);
 
+    let closuresArticle = document.querySelector('#closures');
+    for (let j = 0; j < templeData[i].closures[j].length; j++) {
+      let closureP = document.createElement('p');
+      let startDate = new Date(templeData[i].closures[j].startDate);
+      let endDate = new Date(templeData[i].closures[j].endDate);
+      closureP = startDate + ' - ' + endDate;
+      closuresArticle.appendChild(closureP);
+    }
+
     doWeather(city)
   }
 }
