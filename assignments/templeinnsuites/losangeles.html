@@ -14,13 +14,21 @@
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
+  <link href="images/temple_inn_and_suites.png" rel="icon" type="image/png">
 </head>
-<body onload="popTempleData(1)">
+<body onload="popTempleData(90025)">
   <header>
-    <div id=titlebar>
-    <img src="images/temple_inn_and_suites.png" alt="Temple Inn & Suties logo">
-    <h1 id=pagetitle>Temple Inn & Suites</h1>
-    </div>
+    <section class=titlebar>
+      <div class="box a">
+        <img src="images/temple_inn_and_suites.png" alt="Temple Inn & Suties logo">
+      </div>
+      <div class="box b">
+        <h1 id="pagetitle">Temple Inn & Suites</h1>
+      </div>
+      <div class="box c">
+        <p id="tagline">Where you can turn</p>
+      </div>
+    </section>
     <nav>
       <ul class="navbar responsive">
         <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
@@ -35,40 +43,61 @@
     </nav>
   </header>
   <main>
-    <section class="flexcontainer">
-      <div id=booknowdiv>
-        <a id="calltoaction" href="#reservation">Book Now</a>
+    <section class="gridcontainer">
+      <div class="box 1"><h2>Los Angeles California Temple</h2></div>
+      <div class="box 2">
+          <img id="latempleimg" src="images/los_angeles_temple_lds_800w.jpeg" alt="Los Angeles California Temple">
       </div>
-      <h2>Los Angeles California Temple</h2>
-      <article class="templearticle">
-        <h3>History</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim 
+      <div class="box 3">
+        <article class="templearticle">
+          <h3>History</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim 
            nihil vero dignissimos accusantium assumenda distinctio 
            incidunt officia sit magni exercitationem possimus fuga 
            quibusdam ullam reiciendis optio, omnis eius rem consequuntur!</p>
-      </article>
-      <img id="latempleimg" src="images/los_angeles_temple_lds_800w.jpeg" alt="Los Angeles California Temple">
-      <article id="address">
-        <h3>Address</h3>
-      </article>
-      <section id="weather">
-        <h3>Weather</h3>
-        <article>
-          <h4>Current Conditions</h4>
         </article>
-        <article>
-          <h4>Five Day Forecast</h4>
+      </div>
+      <div class="box 4">
+        <article id="address">
+          <h3>Address</h3>
         </article>
-      </section>
-      <article id="services">
-        <h3>Temple Services</h3>
-      </article>
-      <article i='closures'>
-        <h3>Temple Closures</h3>
-      </article>
-    </div> <!--flexcontainer-->
+      </div>
+      <div class="box 5">
+        <section>
+          <h3>Weather</h3>
+          <article class="weather">
+            <h4>Current Conditions</h4>
+          </article>
+          <section>
+            <h4>Five Day Forecast</h4>
+              <div class="forecasttable">
+                <!--dynamically created content-->
+              </div>
+          </section>
+        </section>
+      </div>
+      <div class="box 6">
+        <!--Image placeholder-->
+      </div>
+      <div class="box 7">
+        <article id="services">
+          <h3>Temple Services</h3>
+        </article>
+      </div>
+      <div class="box 8">
+        <article id="closures">
+          <h3>Temple Closures</h3>
+        </article>
+      </div>
+      <div class="box 7">
+        <article id="schedule">
+          <h3>Session Schedule</h3>
+        </article>
+      </div>
+    </section> <!--gridcontainer-->
   </main>
   <script src="scripts/toggleMenu.js"></script>
   <script src="scripts/templeinfo.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 </html>

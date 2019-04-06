@@ -38,5 +38,7 @@ function popTempleData(city) {
     servicesArticle.appendChild(svcP0);
     servicesArticle.appendChild(svcP1);
     servicesArticle.appendChild(svcP2);
+
+    doWeather(city)
   }
 }
