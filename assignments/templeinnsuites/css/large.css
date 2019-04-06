@@ -17,6 +17,10 @@
   .navbar li  {
       display: block;
   }
+
+  .flexcontainer {
+    flex-flow: row wrap;
+  }
   /* ID selector styles */
 
 }

@@ -15,7 +15,7 @@
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
 </head>
-<body>
+<body onload="popTempleData(1)">
   <header>
     <div id=titlebar>
     <img src="images/temple_inn_and_suites.png" alt="Temple Inn & Suties logo">
@@ -25,7 +25,7 @@
       <ul class="navbar responsive">
         <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="#atlanta">ATLANTA</a></li>
+        <li><a href="#sandiego">SAN DIEGO</a></li>
         <li><a href="#dallas">DALLAS</a></li>
         <li><a href="#houston">HOUSTON</a></li>
         <li><a class="active" href="#">LOS ANGELES</a></li>
@@ -35,44 +35,40 @@
     </nav>
   </header>
   <main>
-    <div class="flexcontainer">
+    <section class="flexcontainer">
       <div id=booknowdiv>
-        <!--article id="booknow">
-          <h2>Click here to</h2-->
-          <a id="calltoaction" href="#reservation">Book Now</a>
-        <!--/article-->
+        <a id="calltoaction" href="#reservation">Book Now</a>
       </div>
-      <section class="templesection">
-        <h2>Los Angeles California Temple</h2>
-        <img src="images/los_angeles_temple_lds_800w.jpeg" alt="Los Angeles California Temple">
-        <article class="templearticle">
-          <h3>History</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim 
-               nihil vero dignissimos accusantium assumenda distinctio 
-               incidunt officia sit magni exercitationem possimus fuga 
-               quibusdam ullam reiciendis optio, omnis eius rem consequuntur!</p>
-        </article>
-      </section>
-      <article>
-        <h3>Adress</h3>
+      <h2>Los Angeles California Temple</h2>
+      <article class="templearticle">
+        <h3>History</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim 
+           nihil vero dignissimos accusantium assumenda distinctio 
+           incidunt officia sit magni exercitationem possimus fuga 
+           quibusdam ullam reiciendis optio, omnis eius rem consequuntur!</p>
       </article>
-      <section id=weather>
+      <img id="latempleimg" src="images/los_angeles_temple_lds_800w.jpeg" alt="Los Angeles California Temple">
+      <article id="address">
+        <h3>Address</h3>
+      </article>
+      <section id="weather">
         <h3>Weather</h3>
         <article>
           <h4>Current Conditions</h4>
         </article>
-        <section>
+        <article>
           <h4>Five Day Forecast</h4>
-        </section>
+        </article>
       </section>
-      <article>
+      <article id="services">
         <h3>Temple Services</h3>
       </article>
-      <article>
+      <article i='closures'>
         <h3>Temple Closures</h3>
       </article>
     </div> <!--flexcontainer-->
   </main>
   <script src="scripts/toggleMenu.js"></script>
+  <script src="scripts/templeinfo.js"></script>
 </body>
 </html>

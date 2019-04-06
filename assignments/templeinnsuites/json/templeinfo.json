@@ -1,0 +1,226 @@
+[
+  {
+    "id":1,
+    "name":"LosAngeles",
+    "address":
+      {
+        "street":"10777 Santa Monica Blvd",
+        "city":"Los Angeles",
+        "state":"CA",
+        "zip":"90025-4718"
+      },
+    "phone":"+1 (310)474-5569",
+    "services":
+      {
+        "clothing":"yes",
+        "cafeteria":"yes",
+        "distCtr":"yes"
+      },
+    "closures": 
+        [
+          {
+            "startDate": "2019-04-06",
+            "endDate": "2019-04-06",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-06-25",
+            "endDate": "2019-09-30",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-10-05",
+            "endDate": "2019-10-05",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-11-27",
+            "endDate": "2019-11-28",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-11-29",
+            "endDate": "2019-11-29",
+            "notes": "limited hours"
+          },
+          {
+            "startDate": "2019-12-24",
+            "endDate": "2019-12-26",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-31",
+            "endDate": "2019-12-31",
+            "notes": " "
+          }
+        ]
+  },
+  {
+    "id":2,
+    "name":"SanDiego",
+    "address":
+      {
+        "street":"7474 Charmant Dr",
+        "city":"San Diego",
+        "state":"CA",
+        "zip":"92122-5000"
+      },
+    "phone":"+1 (858)622-0991",
+    "services":
+      {
+        "clothing":"yes",
+        "cafeteria":"yes",
+        "distCtr":"yes"
+      },
+      "closures": 
+        [
+          {
+            "startDate": "2019-04-06",
+            "endDate": "2019-04-06",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-07-04",
+            "endDate": "2019-07-04",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-09-30",
+            "endDate": "2019-11-11",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-11-27",
+            "endDate": "2019-11-28",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-24",
+            "endDate": "2019-12-25",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-31",
+            "endDate": "2019-12-31",
+            "notes": " "
+          }
+        ]
+  },
+  {
+    "id":3,
+    "name":"Dallas",
+    "address":
+      {
+        "street":"6363 Willow Ln",
+        "city":"Dallas",
+        "state":"TX",
+        "zip":"75230-2227"
+      },
+    "phone":"+1 (972)991-1273",
+    "services":
+      {
+        "clothing":"yes",
+        "cafeteria":"yes",
+        "distCtr":"yes"
+      },
+      "closures": 
+        [
+          {
+            "startDate": "2019-04-06",
+            "endDate": "2019-04-06",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-04-22",
+            "endDate": "2019-05-06",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-07-04",
+            "endDate": "2019-07-04",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-10-01",
+            "endDate": "2019-11-11",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-11-27",
+            "endDate": "2019-11-27",
+            "notes": "limited hours"
+          },
+          {
+            "startDate": "2019-11-28",
+            "endDate": "2019-11-28",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-24",
+            "endDate": "2019-12-25",
+            "notes": " "
+          }
+        ]
+  },
+  {
+    "id":4,
+    "name":"Houston",
+    "address":
+      {
+        "street":"15725 Champion Forest Dr",
+        "city":"Spring",
+        "state":"TX",
+        "zip":"77379-7036"
+      },
+    "phone":"+1 (281)376-6804",
+    "services":
+      {
+        "clothing":"yes",
+        "cafeteria":"no",
+        "distCtr":"yes"
+      },
+      "closures": 
+        [
+          {
+            "startDate": "2019-04-06",
+            "endDate": "2019-04-06",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-07-04",
+            "endDate": "2019-07-04",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-08-06",
+            "endDate": "2019-09-02",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-10-05",
+            "endDate": "2019-10-05",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-11-27",
+            "endDate": "2019-11-27",
+            "notes": "limited hours"
+          },
+          {
+            "startDate": "2019-11-28",
+            "endDate": "2019-11-28",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-24",
+            "endDate": "2019-12-25",
+            "notes": " "
+          },
+          {
+            "startDate": "2019-12-31",
+            "endDate": "2019-12-31",
+            "notes": "limited hours"
+          }
+        ]
+  }
+]    

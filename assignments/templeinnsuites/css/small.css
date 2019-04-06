@@ -17,6 +17,36 @@ body {
 }
 
 /* Class Selector Styles */
+.titlebar {
+  display: grid;
+  background-color: #0c1823;
+  color: #96b9dc;
+  margin: 0 5px 0 5px;
+  grid-gap: 5px;
+  grid-template-columns: 150px 130px;
+  grid-template-rows: auto auto;
+}
+
+.titlebar img { 
+  width: 150px;
+  height: auto;
+}
+
+.a {
+  grid-row: 1;
+  grid-column: 1;
+} 
+
+.b {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.c {
+  grid-row: 2;
+  grid-column: 2;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -54,10 +84,10 @@ body {
 
 .flexcontainer {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
 }
 
-.templesection img {
+.flexcontainer img {
   width: 95%;
   height: auto;
   max-width: 800px;
@@ -70,14 +100,7 @@ body {
 /* ID Selector Styles */
 #pagetitle {
   font-family: 'Playfair Display', serif;
-  font-size: 50px;
-}
-
-#titlebar {
-  display: flex;
-  background-color: #0c1823;
-  color: #96b9dc;
-  margin: 0 5px 0 5px;
+  font-size: 36px;
 }
 
 #booknowdiv {
