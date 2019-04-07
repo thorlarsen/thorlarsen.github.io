@@ -24,7 +24,7 @@ function doWeather(zip) {
   }
 
   function showCurrWeather(currWeatherData) {
-    let weatherArticle = document.querySelector('.weather');
+    let weatherArticle = document.querySelector('.current');
     let weatherIcon = document.createElement('img');
     //let weatherH4 = document.createElement('h4');
     let weatherCurr = document.createElement('p');
@@ -37,8 +37,7 @@ function doWeather(zip) {
     weatherIcon.setAttribute('src', iconUrl);
     weatherIcon.setAttribute('alt', 'Current weather');
     weatherIcon.setAttribute('id', 'curricon')
-    //weatherH4.textContent = 'Weather Summary';
-    weatherCurr.textContent = /*'Currently: ' +*/ currWeatherData.weather[0].main;
+    weatherCurr.textContent = currWeatherData.weather[0].main;
     weatherTemp.textContent = 'Temperature: ' + currWeatherData.main.temp.toFixed(0) + '°F';
     weatherHumidity.textContent = 'Humidity: ' + currWeatherData.main.humidity.toFixed(0) + '%';
     //weatherPrecip.textContent = 'Rain(last 3 hrs): ' + currWeatherData.rain.rain3h;

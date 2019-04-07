@@ -11,6 +11,12 @@ h3 { font-size: 21px; }
 
 h4 { font-size: 18px; }
 
+h5 {
+  font-size: 14px;
+  font-family: 'Archivo', sans-serif;
+  font-weight: bold;
+}
+
 body {
   font-family: 'Archivo', sans-serif;    
   font-size: 14px;
@@ -115,7 +121,6 @@ body {
 
 .forecasttable article h5 {
   margin: 0 5px 0 5px;
-  font-family: 'Archivo Narrow', sans-serif;
 }
 
 .forecasttable article img {
