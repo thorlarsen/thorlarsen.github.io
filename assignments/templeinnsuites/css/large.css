@@ -84,6 +84,28 @@
     flex-flow: column nowrap;
     align-items: center;
   }
+
+  .moreinfodiv {
+    float: right;
+    background-color: #dcb996;
+    margin: 10px 130px 10px 10px;
+  }
+
+  .moreinfodiv p {
+    padding: 10px;
+  }
+
+  .moreinfolink {
+    display: inline-block;
+    background-color: #4080bf;
+    border-radius: 5px;
+    color: #edf3f9;
+    border: none;
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;  
+  }
   /* ID selector styles */
 
 }
