@@ -20,7 +20,7 @@ h5 {
 body {
   font-family: 'Archivo', sans-serif;    
   font-size: 16px;
-  background: #f9f3ed; 
+  background: #ebd6c2; 
   color: #0c1823;
 }
 
@@ -35,8 +35,8 @@ p, ul, li {
   color: #96b9dc;
   margin: 0 5px 0 5px;
   grid-gap: 5px;
-  grid-template-columns: 150px 130px;
-  grid-template-rows: auto auto;
+  grid-template-columns: 150px 140px;
+  grid-template-rows: 150px auto;
 }
 
 .titlebar img { 
@@ -136,7 +136,7 @@ p, ul, li {
 
 /* ID Selector Styles */
 #pagetitle {
-  font-size: 36px;
+  font-size: 35px;
 }
 
 #booknowdiv {
