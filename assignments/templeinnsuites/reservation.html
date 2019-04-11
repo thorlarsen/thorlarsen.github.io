@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Thor Larsen">
+  <meta name="description" content="Weather site project">
+  <title>Temple Inn & Suites</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="images/temple_inn_and_suites.png" rel="icon" type="image/png">
+</head>
+<body>
+  <header>
+    <section class=titlebar>
+      <div class="box a">
+        <img src="images/temple_inn_and_suites.png" alt="Temple Inn & Suties logo">
+      </div>
+      <div class="box b">
+        <h1 id="pagetitle">Temple Inn & Suites</h1>
+      </div>
+      <div class="box c">
+        <p id="tagline">Where you can turn</p>
+      </div>
+    </section>
+    <nav>
+      <ul class="navbar responsive">
+        <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="reservation.html">RESERVATIONS</a></li>
+        <li><a href="sandiego.html">SAN DIEGO</a></li>
+        <li><a href="dallas.html">DALLAS</a></li>
+        <li><a href="houston.html">HOUSTON</a></li>
+        <li><a href="losangeles.html">LOS ANGELES</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Book Your Stay With Us</h2>
+    <p>We know you have a choice. Thank you for choosing to stay with us. 
+       Please provide us some information and your custom quote will 
+       quickly be emailed to you.</p>
+    <div class="formdiv">
+      <form method="get" action="index.html" id="reportform">
+        <label class="res">Full Name:* <input type="text" name="fullname" required
+               pattern="[A-Za-z ]{5,}"></label>
+        <label class="res">Email: <input type="email" name="email" 
+               placeholder="someone@gmail.com"></label>
+        <label class="res">Phone Number:* <input type="number" name="phonenum" 
+               placeholder="1235551234" required></label>
+        <label class="res">Mobile: <input type="number" name="phonenum" 
+          placeholder="1235551234"></label>
+        <label for="prefcomm" class="res">Preffered method? </label>
+          <input id="prefcomm" type="radio" name="prefcomm" value="Email">Email<br>
+          <input id="prefcomm" type="radio" name="prefcomm" value="Phone">Phone<br>
+          <input id="prefcomm" type="radio" name="prefcomm" value="Text">Mobile<br>
+        <label class="res">Arrival Date:* <input type="date" name="arrdate" required></label>
+        <label class="res">How many guests?* <input type="number" name="numguests" required></label>
+        <label class="res">Temple you're visiting:* 
+          <select>
+            <option value="" selected disabled>Select Temple...</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Houston">Houston</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="San Diego">San Diego</option>
+          </select>
+        </label>
+        <label class="res">What type of suite:* 
+            <select>
+              <option value="" selected disabled>Select Suite...</option>
+              <option value="econ">Economy suite</option>
+              <option value="1br">1 Bedroom</option>
+              <option value="2br">2 Bedroom</option>
+              <option value="2br2bt">2 Bedroom 2 Bath</option>
+            </select>
+          </label>
+        <label class="res">How many nights are you staying?:* <span id="ratingvalue">7</span>
+           <input class="slide" type="range" name="nights" value="7" min="1"
+                  max="14" step="1" oninput="adjustRating(this.value)" 
+                  onchange="adjustRating(this.value)"></label>
+           <label class="res">If longer than 14 nights, please click here. 
+                              You will be redirected to our long term page. 
+           </label>
+           <label for="famhist" class="res">Do you need help with family history?</label>
+           <input id="famhist" type="radio" name="famhist" value="Yes">Yes<br>
+           <input id="famhist" type="radio" name="famhist" value="No">No<br>
+           <input id="famhist" type="radio" name="famhist" value="Maybe">Maybe<br>
+           <label for="addinfo" class="res">Additional Important Information:<br>
+            <textarea rows="8" cols="37" name="addinfo" id="addinfo" form="reportform"></textarea>
+            </label>
+            <input type="submit" class="calltoaction" value="Book my stay" >
+        </form>
+    </div>
+  </main>
+  <script src="scripts/toggleMenu.js"></script>
+  <script src="scripts/adjustrating.js"></script>
+</body>
+</html>

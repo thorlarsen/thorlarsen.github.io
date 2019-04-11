@@ -33,6 +33,7 @@
       <ul class="navbar responsive">
         <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
         <li><a class="active" href="#">HOME</a></li>
+        <li><a href="reservation.html">RESERVATIONS</a></li>
         <li><a href="sandiego.html">SAN DIEGO</a></li>
         <li><a href="dallas.html">DALLAS</a></li>
         <li><a href="houston.html">HOUSTON</a></li>
@@ -44,12 +45,34 @@
   </header>
   <main>
     <div id=booknowdiv>
-      <article id="booknow">
-        <h2></h2>
-        <a id="calltoaction" href="#reservation">Book Now</a>
-      </article>
+      <div id=buttondiv>
+        <a class="calltoaction" href="reservation.html">Book your stay now</a>
+      </div>      
+    </div>
+    <div id=indexgrid>
+      <div id="ibox1">
+          <img src="images/washington-dc-temple-lds-med.jpg">
+      </div>
+      <div id="ibox2">
+        <img src="images/salt-lake-temple-door-knob-med.jpg">
+      </div>
+      <div id="ibox3">
+        <img src="images/rome-temple-med.jpg">
+      </div>
+      <div id="ibox4">
+        <img src="images/manila-philippines-temple-wedding-couples-2040546-tablet.jpg">
+     </div>
     </div>
   </main>
+  <footer>
+      <p>
+        &copy; <span id="copyrightYear"></span> Temple Inn & Suites - Bethesda, MD 
+      </p>
+      <p>
+        Site designed and created by Designs by Thor - Houston, TX
+      </p>
+  </footer>
   <script src="scripts/toggleMenu.js"></script>
+  <script src="scripts/currentdate.js"></script>
 </body>
 </html>
