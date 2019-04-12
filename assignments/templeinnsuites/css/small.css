@@ -133,7 +133,7 @@ footer {
 
 .forecasttable {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
 }
 
 .forecasttable article {
@@ -145,12 +145,18 @@ footer {
 .forecasttable article:last-of-type { border-right: none; }
 
 .forecasttable article h5 {
-  margin: 0 5px 0 5px;
+  margin: 20px 5px;
 }
 
 .forecasttable article img {
   width: 55px;
   height: auto;
+}
+
+.current p, .forecasttable p { margin: 2px; }
+
+.current {
+  margin: 10px;
 }
 
 .moreinfolink {
@@ -261,6 +267,9 @@ textarea:focus {
   height: auto;
   margin: 5px 5px 0px 5px;
 }
+
+#closures p, #services p, #address p,
+#session p { margin: 5px; }
 
 
 

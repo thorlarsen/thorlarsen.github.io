@@ -40,14 +40,51 @@ function popTempleData(city) {
     servicesArticle.appendChild(svcP2);
 
     let closuresArticle = document.querySelector('#closures');
-    for (let j = 0; j < templeData[i].closures[j].length; j++) {
+    for (let j = 0; j < templeData[i].closures.length; j++) {
       let closureP = document.createElement('p');
       let startDate = new Date(templeData[i].closures[j].startDate);
       let endDate = new Date(templeData[i].closures[j].endDate);
-      closureP = startDate + ' - ' + endDate;
+      if (startDate == endDate) {
+        let startStr = makeDateStr(startDate);
+        closureP.textContent = startStr;
+      } else {
+        let startStr = makeDateStr(startDate);
+        let endStr = makeDateStr(endDate);
+        closureP.textContent = startStr + ' - ' + endStr;
+      }
       closuresArticle.appendChild(closureP);
     }
 
-    doWeather(city)
+  
+    function makeDateStr(longDate) {
+      let dateStr = "";
+      let longDay = longDate.getDay();
+      if (longDay == 0) dateStr += 'Sunday, ';
+        else if (longDay == 1) dateStr += 'Monday, ';
+        else if (longDay == 2) dateStr += 'Tueday, ';
+        else if (longDay == 3) dateStr += 'Wednesday, ';
+        else if (longDay == 4) dateStr += 'Thursday, ';
+        else if (longDay == 5) dateStr += 'Friday, ';
+        else dateStr += 'Saturday, ';
+      dateStr += longDate.getDate() + ' ';
+      let longMonth = longDate.getMonth();
+      if (longMonth == 0) dateStr += "January ";
+        else if (longMonth == 1) dateStr += "February ";
+        else if (longMonth == 2) dateStr += "March ";
+        else if (longMonth == 3) dateStr += "April ";
+        else if (longMonth == 4) dateStr += "May ";
+        else if (longMonth == 5) dateStr += "June ";
+        else if (longMonth == 6) dateStr += "July ";
+        else if (longMonth == 7) dateStr += "August ";
+        else if (longMonth == 8) dateStr += "September ";
+        else if (longMonth == 9) dateStr += "October ";
+        else if (longMonth == 10) dateStr += "November ";
+        else dateStr += "December ";
+      dateStr += longDate.getFullYear();
+      return dateStr;
+    }
   }
+    
+
+    doWeather(city)
 }
