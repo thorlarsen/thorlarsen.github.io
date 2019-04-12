@@ -91,14 +91,13 @@
   }
 
   .forecasttable article {
-    border-right: none;
-    border-bottom: 1px solid;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin: 5px;
   }
 
-  .forecasttable article:last-child { border-bottom: none; }
+  
 
   /* ID selector styles */
   #indexgrid {
