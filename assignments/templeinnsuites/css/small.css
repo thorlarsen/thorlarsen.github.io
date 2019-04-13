@@ -294,12 +294,12 @@ textarea:focus {
 
 #rbox3 {
   grid-column: 1;
-  grid-rox: 2;
+  grid-row: 2;
 }
 
 #rbox4 {
   grid-column: 1;
-  grid-rox: 4;
+  grid-row: 4;
 }
 
 #rbox3 img, #rbox4 img  {

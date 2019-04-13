@@ -34,7 +34,7 @@
     <nav>
       <ul class="navbar responsive">
         <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
-        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="index.html">HOME</a></li>
         <li><a href="reservation.html">RESERVATIONS</a></li>
         <li><a href="sandiego.html">SAN DIEGO</a></li>
         <li><a href="dallas.html">DALLAS</a></li>
@@ -61,7 +61,7 @@
         </section>
       </div>
       <div id="rbox2" class="formdiv">
-        <form method="get" action="index.html" id="reportform">
+        <form method="get" action="thankyou.html" id="reportform">
             <label class="res">Full Name:* <input type="text" name="fullname" required
                 pattern="[A-Za-z ]{5,}"></label>
             <label class="res">Email: <input type="email" name="email" placeholder="someone@gmail.com"></label>
@@ -98,7 +98,19 @@
       </div>
     </div>
   </main>
-      <script src="scripts/toggleMenu.js"></script>
+  <footer>
+      <p>
+        &copy; <span id="copyrightYear"></span> Temple Inn & Suites - Bethesda, MD 
+      </p>
+      <p>
+        Site designed and created by Designs by Thor - Houston, TX
+      </p>
+      <p><a href="resources.html">Content resources</a></p>
+      <p><span id="currentDate"></span></p>
+
+  </footer>
+  <script src="scripts/toggleMenu.js"></script>
+  <script src="scripts/currentdate.js"></script>
 </body>
 
 </html>

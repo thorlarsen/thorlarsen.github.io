@@ -49,7 +49,7 @@
        Please provide us some information and your custom quote will 
        quickly be emailed to you.</p>
     <div class="formdiv">
-      <form method="get" action="index.html" id="reportform">
+      <form method="get" action="thankyou.html" id="reportform">
         <label class="res">Full Name:* <input type="text" name="fullname" required
                pattern="[A-Za-z ]{5,}"></label>
         <label class="res">Email: <input type="email" name="email" 
@@ -86,7 +86,7 @@
            <input class="slide" type="range" name="nights" value="7" min="1"
                   max="14" step="1" oninput="adjustRating(this.value)" 
                   onchange="adjustRating(this.value)"></label>
-           <label class="res">If longer than 14 nights, please click here. 
+           <label class="res">If longer than 14 nights, please <a href="longterm.html">click here.</a> 
                               You will be redirected to our long term page. 
            </label>
            <label for="famhist" class="res">Do you need help with family history?</label>
@@ -100,7 +100,19 @@
         </form>
     </div>
   </main>
+  <footer>
+      <p>
+        &copy; <span id="copyrightYear"></span> Temple Inn & Suites - Bethesda, MD 
+      </p>
+      <p>
+        Site designed and created by Designs by Thor - Houston, TX
+      </p>
+      <p><a href="resources.html">Content resources</a></p>
+      <p><span id="currentDate"></span></p>
+
+  </footer>
   <script src="scripts/toggleMenu.js"></script>
+  <script src="scripts/currentdate.js"></script>
   <script src="scripts/adjustrating.js"></script>
 </body>
 </html>
