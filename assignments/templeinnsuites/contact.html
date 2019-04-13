@@ -44,7 +44,25 @@
     </nav>
   </header>
   <main>
-
+  <article>
+    <h2>Contact us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4386.047756726616!2d-77.09861243366004!3d38.98327251385981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1555133201960!5m2!1sen!2sus"></iframe>
+      <p>Temple Inn & Suites</p>
+      <p>4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20814</p>
+      <p>Phone: +1 (240)555-1234</p>
+  </article>
+  <form method="get" action="index.html" id="reportform">
+      <p>Feel free to leave comments below:</p>
+      <label class="res">Full Name:* <input type="text" name="fullname" required
+        pattern="[A-Za-z ]{5,}"></label>
+      <label class="res">Email: <input type="email" name="email" placeholder="someone@gmail.com"></label>
+      <label for="addinfo" class="res">Anything else we need to know?<br>
+        <textarea rows="8" cols="37" name="addinfo" id="addinfo" form="reportform"></textarea>
+      </label>
+      <input type="submit" class="calltoaction" value="Send comments">
+  </form>
+  </form>
   </main>
   <script src="scripts/toggleMenu.js"></script>
 </body>

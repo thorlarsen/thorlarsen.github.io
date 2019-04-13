@@ -1,4 +1,4 @@
-@media screen and (min-width: 501px) and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 1024px) {
 
     #indexgrid {
         display: grid;
@@ -41,6 +41,8 @@
       #indexgrid img:first {
         filter: none;
       }
+
+
 
 
 

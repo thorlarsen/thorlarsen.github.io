@@ -1,5 +1,5 @@
 /* For large viewports */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1025px) {
   
   /* Global styles */
 
@@ -7,7 +7,7 @@
   .navbar {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -139,4 +139,38 @@
   #indexgrid img:first {
     filter: none;
   }
+
+  #rboxcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  #rbox1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #rbox2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #rbox3 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  #rbox4 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  #rbox3 img, #rbox4 img  {
+    margin: 5px;
+    max-width: 650px;
+    width: 95%;
+    height: auto;
+  }
+  
 }

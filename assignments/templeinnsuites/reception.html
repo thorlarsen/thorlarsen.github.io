@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
   <link href="css/large.css" rel="stylesheet">
   <link href="images/temple_inn_and_suites.png" rel="icon" type="image/png">
 </head>
+
 <body>
   <header>
     <section class=titlebar>
@@ -26,31 +28,77 @@
         <h1 id="pagetitle">Temple Inn & Suites</h1>
       </div>
       <div class="box c">
-        <p id="tagline">Where you can turn</p>
+        <p id="tagline">Where you can turn for peace</p>
       </div>
     </section>
     <nav>
       <ul class="navbar responsive">
         <li><a href="#" onclick="toggleMenu()">&equiv; MENU</a></li>
-        <li><a class="active" href="#">HOME</a></li>
+        <li><a class="active" href="index.html">HOME</a></li>
         <li><a href="reservation.html">RESERVATIONS</a></li>
         <li><a href="sandiego.html">SAN DIEGO</a></li>
         <li><a href="dallas.html">DALLAS</a></li>
         <li><a href="houston.html">HOUSTON</a></li>
         <li><a href="losangeles.html">LOS ANGELES</a></li>
-        <li><a href="services.html">SERVICES</a></li>
+        <li><a class="active" href="services.html">SERVICES</a></li>
         <li><a href="contact.html">CONTACT</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <div id=booknowdiv>
-      <article id="booknow">
-        <h2></h2>
-        <a class="calltoaction" href="reservation.html">Book Now</a>
-      </article>
+    <div id="rboxcontainer">
+      <div id="rbox1">
+        <section id="reception">
+          <h2>Services: Reception Accomodations</h2>
+          <article>
+            <p>Congratulations on the big day! Now let us help you celebrate. We can
+              accomodate your reception in our large event rooms at each of our
+              properties. We can handle the setup and the catering. We have a variety
+              of food options, and we can help set a good tone with classy
+              decorations and appropriate music for your big event.</p>
+            <p>Fill out the form below and one of our planners will contact you.</p>
+          </article>
+        </section>
+      </div>
+      <div id="rbox2" class="formdiv">
+        <form method="get" action="index.html" id="reportform">
+            <label class="res">Full Name:* <input type="text" name="fullname" required
+                pattern="[A-Za-z ]{5,}"></label>
+            <label class="res">Email: <input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="res">Phone Number:* <input type="number" name="phonenum" placeholder="1235551234"
+                required></label>
+            <label class="res">Mobile: <input type="number" name="phonenum" placeholder="1235551234"></label>
+            <label for="prefcomm" class="res">Preffered method? </label>
+            <input id="prefcomm" type="radio" name="prefcomm" value="Email">Email<br>
+            <input id="prefcomm" type="radio" name="prefcomm" value="Phone">Phone<br>
+            <input id="prefcomm" type="radio" name="prefcomm" value="Text">Mobile<br>
+            <label class="res">Reception Date:* <input type="date" name="recpdate" required></label>
+            <label class="res">How many guests?* A guess is fine for now. <input type="number" name="numguests"
+                required></label>
+            <label class="res">City:*
+              <select>
+                <option value="" selected disabled>Select Temple...</option>
+                <option value="Dallas">Dallas</option>
+                <option value="Houston">Houston</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="San Diego">San Diego</option>
+              </select>
+            </label>
+            <label for="addinfo" class="res">Anything else we need to know?<br>
+              <textarea rows="8" cols="37" name="addinfo" id="addinfo" form="reportform"></textarea>
+            </label>
+            <input type="submit" class="calltoaction" value="Book my big event">
+        </form>
+      </div>
+      <div id="rbox3">
+        <img src="images/sealing-room-Star-Valley-Temple6BB-2016.jpg" alt="Star Valley Temple Sealing Room">
+      </div>
+      <div id="rbox4">
+        <img src="images/round-table-setting-wedding-round-table-decor.jpg" alt="Reception Tables">
+      </div>
     </div>
   </main>
-  <script src="scripts/toggleMenu.js"></script>
+      <script src="scripts/toggleMenu.js"></script>
 </body>
+
 </html>
