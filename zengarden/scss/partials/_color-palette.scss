@@ -1,0 +1,63 @@
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #094b1a; // Hunter Green - Action color
+$color-2: #031709; // Rich Black (very dark green)
+$color-3: #7d3834; // Medium Tuscan Red
+$color-4: #c3a4a2; // Silver Pink
+$color-5: #e9ebea; // Isabelline (almost white)
+
+// links
+
+$link-color: lighten($color-1, 20%);
+$visited-link-color: lighten($color-3, 20%);
+$hover-link-color: $color-4;
+$active-link-color: lighten($color-3, 50%);
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-3; // red
+
+body {
+    background-color: $color-5; 
+    }
+    h1 {
+        color: $color-3;
+    }
+    h2 {
+        color: $color-5;
+      }
+    //Intro
+    .intro h2 {
+        background-color: black;
+    }
+    //Preamble
+    .preamble {
+        background-color: $color-1; 
+        
+    }
+    .preamble p {
+        color: $color-5;      
+    }
+    .preamble h3, .sidebar h3 {
+        color: $color-3;
+        background-color: white;
+    }
+    //Sidebar
+    .sidebar h3 {
+        color: $color-1;
+    }
+    .sidebar li, .sidebar li a {
+        color: $color-4;
+    }
+
+    .sidebar{
+        background-color: $color-3;
+    }
+    //Footer
+    footer a {
+        color: $color-4;
+        background-color: white;
+    }
+    
+    

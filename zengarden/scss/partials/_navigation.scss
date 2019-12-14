@@ -1,0 +1,18 @@
+// Link styles
+
+a {
+  &:link {
+    color: $link-color;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $visited-link-color;
+    text-decoration: underline;
+  }
+  &:hover {
+    color: $hover-link-color;
+  }
+  &:active {
+    color: $active-link-color;
+  }
+}

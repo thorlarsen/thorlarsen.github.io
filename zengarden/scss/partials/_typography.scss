@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Gabriela|Nunito&display=swap');
+
+$primary-font: 'Nunito', sans-serif;
+$secondary-font: 'Gabriela', serif;
+
+//Body
+h1,h2,h3 {
+  font-family: $secondary-font;
+}
+h1 {
+  color: $color-3;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-shadow:
+  -2px -2px 0 $color-5,
+  2px -2px 0 $color-5,
+  -2px 2px 0 $color-5,
+  2px 2px 0 $color-5;
+  padding: 2%;
+  position: relative;
+}
+
+h2 {
+  color: $color-5;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0;
+  font-size: 2.5rem;
+  border-top: 5px solid $color-3;
+  border-bottom: 5px solid $color-3;
+  padding: 2%;
+  position: relative;
+  text-align: left;
+
+  @include MQ(S) {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  } 
+}
+
+h3 {
+  color: $color-1;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 2% 2% 0 2%;
+}
+p {
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: darken($color-2, 25%);
+  padding: 2% 2% 0 2%;
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: darken($color-4, 15%);
+}
+a {
+        text-decoration: underline;
+  }
+
+//Preamble
+.preamble p {
+  padding: 2%; 
+}
+.preamble h3, .sidebar h3 {
+  padding: 2%;
+  border: 4px dotted $color-2;
+  text-align: left;
+}
+
+  /*
+  @include MQ(S) {
+    font-size: 3.2rem;
+  }
+
+  @include MQ(M) {
+    font-size: 4rem;
+  } */
+
+//Sidebar
+  .sidebar {
+    font-family: $primary-font;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 2%;
+  }
+
+  //Footer
+  footer {
+    font-family: $primary-font;
+    font-weight: bold;
+    background-color: $color-3;
+    font-size: 1rem;
+    padding: 2%;
+    }
+
+  footer a {
+      padding: 1%;
+      border: 4px dotted $color-2;
+      margin-left: 50px;
+  }
+
+ /*
+  @include MQ(S) {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  } */ 
