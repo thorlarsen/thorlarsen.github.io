@@ -1,0 +1,10 @@
+// Define a grid 
+@mixin defgrid($rows,$columns) {
+    display: grid;
+    //grid-template-rows: repeat($rows, calc(100% / #{$rows}));
+    //grid-template-columns: repeat($columns, calc(100% / #{$columns}));
+    //grid-template-rows: repeat($rows, 1fr);
+    //grid-template-columns: repeat($columns, 1fr);
+    grid-template-rows: repeat($rows, auto);
+    grid-template-columns: repeat($columns, auto);
+}
