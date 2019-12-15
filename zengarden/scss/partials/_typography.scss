@@ -20,6 +20,10 @@ h1 {
   padding: 2%;
   position: relative;
 
+  @include MQ(M) {
+    font-size: 4.3rem;
+  }
+
   @include MQ(S) {
     font-size: 3.5rem;
   }
@@ -39,6 +43,10 @@ h2 {
   position: relative;
   text-align: left;
 
+  @include MQ(M) {
+    font-size: 2.1rem;
+  }
+
   @include MQ(S) {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
@@ -51,6 +59,10 @@ h3 {
   font-size: 1.6rem;
   padding: 2% 2% 0 2%;
 
+  @include MQ(M) {
+    font-size: 1.4rem;
+  }
+
   @include MQ(S) {
     font-size: 1.2rem;
   }
@@ -61,7 +73,11 @@ p {
   line-height: 1.5;
   color: darken($color-2, 25%);
   padding: 2% 2% 0 2%;
-
+ 
+  @include MQ(M) {
+    font-size: 1.1rem;
+  }
+  
   @include MQ(S) {
     font-size: 1rem;
   }
@@ -94,12 +110,40 @@ a {
     font-size: 4rem;
   } */
 
+  .main>* {
+    padding: 4%;
+  }
+
 //Sidebar
-  .sidebar {
+.sidebar {
     font-family: $primary-font;
     font-size: 1.2rem;
     line-height: 2rem;
     padding: 2%;
+
+    li {
+      padding: 5%;
+    }
+  }
+
+  .design-name {
+    text-transform: uppercase;
+  }
+
+  a:hover {
+      animation: link-trans 3s linear infinite;
+  }
+
+  @keyframes link-trans {
+    //from {text-decoration: none;}
+    /*to {text-decoration: none;
+        background-color: $color-4;
+        color: $color-3;}*/
+    0% {text-decoration: none;}
+    50% {text-decoration: none;
+      background-color: $color-4;
+      color: $color-3;}
+    100% {text-decoration: none;}
   }
 
   //Footer
