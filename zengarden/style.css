@@ -259,7 +259,7 @@ a:active {
     90% {
       transform: translate(0) rotateY(180deg); }
     100% {
-      transfor: translate(0); } }
+      transform: translate(0); } }
   .intro header h1::before {
     content: "A "; }
   .intro header > h1::after {
@@ -344,7 +344,7 @@ a:active {
     grid-row: -2 / -1;
     align-self: end;
     display: flex;
-    justify-items: space-between; } }
+    justify-content: space-between; } }
 
 @media screen and (max-width: 1024px) {
   .page-wrapper {
@@ -377,7 +377,7 @@ a:active {
     90% {
       transform: translate(0) rotateY(180deg); }
     100% {
-      transfor: translate(0); } }
+      transform: translate(0); } }
   .intro header h1::before {
     content: "A "; }
   .intro header > h1::after {
@@ -441,7 +441,6 @@ a:active {
   .main footer {
     grid-column: 1 / 3;
     grid-row: 5 / 6;
-    align-self: bottom;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -483,7 +482,7 @@ a:active {
     90% {
       transform: translate(0) rotateY(180deg); }
     100% {
-      transfor: translate(0); } }
+      transform: translate(0); } }
   .intro header h1::before {
     content: "A "; }
   .intro header > h1::after {
@@ -547,7 +546,6 @@ a:active {
   .main footer {
     grid-column: 1 / 2;
     grid-row: 5 / 6;
-    align-self: bottom;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
