@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function addUp() {
+
+    let input = parseInt(document.getElementById("addupin").value);
+    let answer = 0;
+
+     for (let i = input; i > 0; i--) {
+         answer = answer + i;
+     }
+     document.getElementById("addupout").innerHTML = answer;
+}
+
+function addMachine() {
+
+    let input1 = parseInt(document.getElementById("adder1").value);
+    let input2 = parseInt(document.getElementById("adder2").value);
+    let answer = input1 + input2;
+
+    document.getElementById("addmachineout").innerHTML = answer;
+
+}
+
+function minusMachine() {
+    let input1 = parseInt(document.getElementById("adder1").value);
+    let input2 = parseInt(document.getElementById("adder2").value);
+    let answer = input1 - input2;
+
+    document.getElementById("addmachineout").innerHTML = answer;
+}
+
+function timesMachine() {
+    let input1 = parseInt(document.getElementById("adder1").value);
+    let input2 = parseInt(document.getElementById("adder2").value);
+    let answer = input1 * input2;
+
+    document.getElementById("addmachineout").innerHTML = answer;
+}
+
+</script>
+</head>
+<body>
+
+    <div id="number01">
+        <label for="addupin">Number</label>
+        <input type="text" id="addupin" name="addupin">
+        
+        <button onclick="addUp()">Add Up</button>
+        
+        <br>
+        <br>
+
+        <span id="addupout"></span>
+
+        <br>
+        <br>
+    </div>
+
+    <div id="number02">
+        <label for="adder1">Number 1</label>
+        <input type="text" id="adder1" name="adder1">
+        
+        <label for="adder2">Number 2</label>
+        <input type="text" id="adder2" name="adder2">
+        
+        <button onclick="addMachine()" id="add">+</button>
+        <button onclick="minusMachine()" id="minus">-</button>
+        <button onclick="timesMachine()" id="times">x</button>
+        
+        <br>
+        <br>
+
+        <span id="addmachineout"></span>
+
+        <br><br>
+    </div>
+
+<header>
+
+</header>
+</body>
+</html>
