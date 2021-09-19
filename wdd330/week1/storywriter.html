@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Week 1 Story Writer</title>
+        <link href="css/week1.css" rel="stylesheet">
+        <script src="js/week1.js"></script>
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Story Editor</h1>
+        <span>Story Name: </span><input id="name-input"></input>
+        <section>
+            <button onclick="loadStory()">Find and Edit your story</button>
+            <button onclick="saveStory()">Save your story</button>
+            <button onclick="displayStory()">Display your story</button>
+        </section>
+        <textarea id="story-editor" placeholder="Write something amazing right here"></textarea>
+        <section id="name-display" class="title"></section>
+        <section id="story-display" class="textbody"> </section>
+    </body>
+    <footer>
+        <span><a href="..">Go back</a> to the Portfolio</span>
+    </footer>
+</html>

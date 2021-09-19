@@ -1,0 +1,85 @@
+Master Mobile UX 
+
+1.1 Rewire your brain
+
+Mobile first makes you focus on content and core functionality, Helps you keep it simple, and I'm always a fan of that.
+
+Small screens have a 2 year turnover, or more. No sharing. Everyone in the household has their own.
+
+Mobile traffic is more than half of internet traffic.
+
+My company isn't doing doing mobile first. They're getting away with because the apps are really not used on mobile devices. I don't think they'll get away with that for long.
+
+Rewiring brains:
+* Desktop sales on steady decline and not picking up
+* People don't carry laptops on the street
+* Start small scale up. Easier to make things grow than making them shrink
+* Mobile is not a fad
+
+1.2 Improve UX by understanding users
+
+Be there - help people on their decision journey
+Be useful - users won't stay if they find what they need or if it's hard to use
+Be quick - not necessarily fast loading, but fast to interact with. Few clicks close to where the finger is, and fewer steps
+
+Reachability - How do users use devices? 
+Phone-Thumbs and one hand.
+Notepad-two hands but still with thumbs
+
+Slow loading? Delays in loading mean drop in traffic, meaning drop in revenue
+
+What affects speed?
+Networks are the biggest factors, infrastructure lags
+
+How to affect speed on our own?
+* Reduce image usage
+* Use SVG images and webfonts
+* Optimize and minify CSS and JS
+* GZIP files to eliminate unnecessary data
+
+1.3 Strategic Menu design
+
+Software sucks. I know that. I work in the industry as a support guy.
+
+Primary controls - know what the easiest to reach areas of the screen and put most used contorls there.
+Makes users perceive the app is faster
+
+Good enough - hamburger menu. Who really knows what it is?
+Better - having MENU with a border and hamburger scored better 
+Best - MENU with a border no hamburger
+
+Users don't complain because it's so much easire easy to go to another site or get another app 
+
+1.4 Intuitive, mobile friendly forms
+
+Problem - lots of info demanded of user 
+Forms force up/down scrolling or worse, left/right scrolling
+
+Better?
+Larger checkboxes can be hit by the thumb 
+Just get the minimum info to make them smaller
+Paginate the form instead of scrolling. Include progress indicator. (Finally! Someone gets it!)
+Autocomplete
+Make password boxes without masked text at least while typing
+Remember that credit card example. It's way cool!
+Present the best keyboard for the date being entered. Use number pad for number entry
+Link phone numbers in web site to tap and make a call
+
+1.5 Mobile Advertising
+
+End users shape market, not technologies.
+
+Research before you advertise
+
+1990's-Content w/ almost no advertising.
+Now-Ads get in the way of content, No one figured out that ads on small devices are perceived as evil
+Pop ups and in betweeners are detested, esp on mobile 
+
+How to fix?
+small simple ads within the content
+* larger ad can pop up once the small, inocuous ad is clicked
+* get rid of the hover ad at the bottom of the screen
+* Paralax windows for ads within the content
+
+Users don't visit sites to view ads. Simple, sleek, and content first.
+Do you like the ad you're showing?
