@@ -5,10 +5,4 @@ const links = [
   }
 ]
 
-var toc = document.getElementById('toc');
 
-links.forEach(addLi)
-
-function addLi(item) {
-toc.a  
-}
