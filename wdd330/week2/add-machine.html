@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="WDD 330 Week 2 Group Assignment">
+    <title>Week 2: Adding Machine</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <script src="js/operations.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Team Project</h1>
+    </header>
+    <main>
+        <h2>Requirement 1</h2>
+        <input id="input1" type="text" />
+        <button onclick="req1Display()">Display</button>
+        <div class="output" id="output1"></div>
+        <h2>Requirement 2</h2>
+        <input id="input2" type="text" />
+        <button onclick="req2Display()">Add up to</button>
+        <div class="output" id="output2"></div>
+        <h2>Requirement 3</h2>
+        <input id="input31" type="text" />
+        <input id="input32" type="text" />
+        <button onclick="req3Display()">+</button>
+        <div class="output" id="output3"></div>
+        <h2>Stretch Requirement</h2>
+        <input id="inputs1" type="number" />
+        <input id="inputs2" type="number" />
+        <button onclick="doOp(add)">+</button>
+        <button onclick="doOp(sub)">-</button>
+        <button onclick="doOp(mlt)">x</button>
+        <div class="output" id="outputs"></div>
+    </main>
+
+</body>
+
+</html>
