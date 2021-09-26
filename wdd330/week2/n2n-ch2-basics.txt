@@ -1,0 +1,77 @@
+Most of this was review. But there were a few concepts below that either are new or not well understood from before.
+
+CONSTRUCTOR FUNCTION
+
+> food = new String("Whataburger")
+[String: 'Whataburger']
+> typeof food
+'object'
+> dinner = "Whataburger"
+'Whataburger'
+> typeof dinner
+'string'
+>
+
+Constructor Function makes an object and not a string.
+
+Question: It might become clearer as we work through the course, but what is the advantage of using a contructor function to create an object, over creating a string data type?
+
+String Properties and Methods
+
+Important: Primitive data types and objects have properties and methods. Properties are information about the object or value, while methods perform an action on the object or value ― either to change it or to tell us something about it. 
+
+Good to know: Technically, only objects have properties and methods. JavaScript overcomes this by creatingwrapper objectsfor primitive data types. This all happens in the background, so for all intents and purposes it appears that primitive data types also have properties and methods.
+
+> dinner.length
+11
+> dinner.toUpperCase() >
+'WHATABURGER'          >>
+> dinner.toLowerCase() >>---These don't change the value of the string, just how it outputs when this method is called
+'whataburger'          >
+> dinner.charAt(5)
+'b'
+> dinner.indexOf('b')
+5
+> dinner.indexOf('a')
+2
+> dinner.lastIndexOf('a')
+4
+> dinner.includes('x')
+false
+> dinner.includes('W')
+true
+> dinner.includes('w')
+false
+> dinner.startsWith('W')
+true
+> dinner.startsWith('w')
+false
+> dinner.endsWith('r')
+true
+
+TEMPLATE LITERALS - Special type of string entered with the backtick character: `Like this`
+Something cool you can do with it:
+> const age = 55;
+undefined
+> const myAge = `I will be ${ age + 1 } next year`;
+undefined
+> myAge;
+'I will be 56 next year'
+
+Can also contain line breaks and double quotes inside the string
+
+SYMBOLS 
+
+Create unique values, covered more later. Most useful for creating unique keys.
+
+NUMBERS
+
+Also have constructor functions
+let num = new Number(3);
+
+More verbose than declaring a literal
+
+JAVASCRIPT IS WEAKLY TYPED
+
+Unlike Java. 
+

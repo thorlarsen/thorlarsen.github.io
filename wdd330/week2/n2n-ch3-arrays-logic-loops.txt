@@ -1,0 +1,49 @@
+Mostly review except for below:
+
+LOOOPING OVER ARRAYS(NEW AND IMPROVED)
+
+Here's an arrary:
+> const bestBurgers = []
+undefined
+> bestBurgers[0] = 'In-n-Out';
+'In-n-Out'
+> bestBurgers[1] = 'Whataburger';
+'Whataburger'
+> bestBurgers[2] = 'Five Guys';
+'Five Guys'
+
+Iterate and print each member of the Array:
+> for(const value of bestBurgers){
+... console.log(value);
+... }
+In-n-Out
+Whataburger
+Five Guys
+>
+
+MAPS
+new data structure, similar to associative arrays
+
+> const romanNumerals = new Map();
+undefined
+> romanNumerals.set(1,'I');
+Map(1) { 1 => 'I' }
+> romanNumerals.set(2,'II');
+Map(2) { 1 => 'I', 2 => 'II' }
+> romanNumerals.set(3,'III');
+Map(3) { 1 => 'I', 2 => 'II', 3 => 'III' }
+> romanNumerals.set(4,'IV');
+Map(4) { 1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV' }
+> romanNumerals.set(5,'V');
+Map(5) { 1 => 'I', 2 => 'II', 3 => 'III', 4 => 'IV', 5 => 'V' }
+
+Here you get to define the key and the value to associate with that key.
+
+Methods
+
+> romanNumerals.get(4);
+'IV'
+> romanNumerals.has(5);
+true
+> romanNumerals.has(6);
+false

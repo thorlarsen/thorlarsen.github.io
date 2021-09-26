@@ -1,0 +1,25 @@
+Mostly review, but very important things that I used in the Team Assignment:
+
+PLAIN OLD-FASHIONED FUNCTIONS
+
+function getNum(id) {
+    const number = parseFloat(document.getElementById(id).value);
+    return number;
+}
+
+ARROW FUNCTIONS
+
+const add = (num1, num2) => num1 + num2;
+
+const sub = (num1, num2) => num1 - num2;
+
+const mlt = (num1, num2) => num1 * num2;
+
+CALLBACKS
+
+A function calling a function. In the example below, the argument "op" is one of the arrow functions above. 
+
+function doOp(op) {
+    const answer = op(getNum('inputs1'), getNum('inputs2'));
+    writeAnswer2div('outputs', answer)
+}
