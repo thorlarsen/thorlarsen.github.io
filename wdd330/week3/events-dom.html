@@ -18,7 +18,7 @@
 <body>  
     <main>
         <h1>Event Listener Exercise Page</h1>
-    <div id="introduction">
+                <div id="introduction">
         <p>Taking notes from the reading wasn't working for me. I made this page as hands-on practice
             for event listeners.
         </p>
@@ -26,7 +26,7 @@
 
     <div id='hover1'>
         <h2>Move from Nothing to Something, and Back Again</h2>
-        <p>Move the mouse into below to see an homage to cheese. Move the mouse out and it goes away.</p>
+        <p>Move the mouse into the box below to see an homage to cheese. Move the mouse out and it goes away.</p>
         <div id='cheese'>
             <p id='cheesetxt'>I love cheese, especially monterey jack cheese on toast. Brie gouda gouda port-salut 
                 roquefort halloumi swiss mozzarella. Everyone loves mascarpone cheese slices danish 
@@ -39,17 +39,35 @@
         <h2>Click for a Change</h2>
         <p>Click in the red space below.</p>
         <div id='clickresp'>
-            <p id='clickp'>This uses a query selector, by the way.</p>
+            <p id='clickp'>This uses a query selector, by the way. Now double click.</p>
         </div>
     </div>
     <div id='hoverresp'></div>
 
+    <div id="keyboard1">
+        <h2>Keyboard Roulette</h2>
+        <p>To show the different keyboard events, click on a character key (delete is fine too).</p>
+        <ul>
+            <li>keydown: </li><div id='kd'></div>
+            <li>keypress: <div id='kp'></div></li>
+            <li>keyup: <div id='ku'></div></li>
+        </ul>
+    </div>
+
     <h2>The Broken Link</h2>
     <p>The following link does not go to the page it says it's going to, but rather it will cause a message to 
-        open below. Yes, I understand the many security concerns this might cause in the real world.
-        <a id='broken' href="http://google.com"> Click Here</a>
-    </p>
+        open below. Yes, I understand the many security concerns this might cause in the real world.</p>
+    <p><a id='broken' href="http://google.com"> Click Here</a></p>
     <div id='brokenresponse'></div>
+
+    <h2>Deep Thought Removal</h2>
+    <p>Move the mouse into the area below.</p>
+    <div id="guidequotes">
+        <p>“Forty-two,” said Deep Thought, with infinite majesty and calm. Arthur had been trying for some thirty seconds now, without success, to say “Where did you get that?” sharply, and with a gasp in his voice. And so the Sandwich Maker sang as he worked. It can be very dangerous to see things from somebody else’s point of view without the proper training. Our last god was a less is more kinda guy.</p>
+        <p>One moment, there was forty-two and the next there wasn’t. Number Two’s eyes narrowed and became what are known in the Shouting and Killing People trade as cold slits, the idea presumably being to give your opponent the impression that you have lost your glasses or are having difficulty keeping awake. Why this is frightening is an, as yet, unresolved problem. This was all a little stressful. People in New York were not nice to each other without reason. Laser light flickered all over him as if he were a packet of biscuits at a supermarket check-out.</p>
+        <p>I am omniscient and omnipotent, extremely vain and, what is more, I come in a handy self-carrying package. “Pigs,” said the cow. “Don’t talk to me about pigs.” “In five years I will have razed this planet, eaten its young, and stacked your skulls high in my honor.” And there’s nothing that depresses me more than seeing a planet being destroyed. Except possibly still being on it when it happens. Inside, of course, was where the Outside was.</p>
+    </div>
+    <p>Now click in the quotes area and it won't change again.</p>
     
     <h2>The Outro</h2>
     <div id="outro">
