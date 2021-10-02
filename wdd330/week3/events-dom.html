@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="Portfolio for WDD 330: Web Front-end Development II BYUI">
+    <title>WDD 330: Week 3</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <script src="../js/main.js"></script>
+</head>
+
+<body>  
+    <main>
+        <h1>Event Listener Exercise Page</h1>
+    <div id="introduction">
+        <p>Taking notes from the reading wasn't working for me. I made this page as hands-on practice
+            for event listeners.
+        </p>
+    </div>
+
+    <div id='hover1'>
+        <h2>Move from Nothing to Something, and Back Again</h2>
+        <p>Move the mouse into below to see an homage to cheese. Move the mouse out and it goes away.</p>
+        <div id='cheese'>
+            <p id='cheesetxt'>I love cheese, especially monterey jack cheese on toast. Brie gouda gouda port-salut 
+                roquefort halloumi swiss mozzarella. Everyone loves mascarpone cheese slices danish 
+                fontina macaroni cheese roquefort cream cheese boursin. Airedale smelly cheese babybel 
+                dolcelatte chalk and cheese queso melted cheese emmental. Danish fontina parmesan fondue.</p>
+        </div>
+    </div>
+
+    <div id='click1'>
+        <h2>Click for a Change</h2>
+        <p>Click in the red space below.</p>
+        <div id='clickresp'>
+            <p id='clickp'>This uses a query selector, by the way.</p>
+        </div>
+    </div>
+    <div id='hoverresp'></div>
+
+    <h2>The Broken Link</h2>
+    <p>The following link does not go to the page it says it's going to, but rather it will cause a message to 
+        open below. Yes, I understand the many security concerns this might cause in the real world.
+        <a id='broken' href="http://google.com"> Click Here</a>
+    </p>
+    <div id='brokenresponse'></div>
+    
+    <h2>The Outro</h2>
+    <div id="outro">
+        <p>The footer to this page and every page is written by an event listener.</p>
+    </div>
+    </main>
+    <footer id="footer">
+    </footer>
+</body>
+<script src="js/event-listener.js"></script>
+</html>
