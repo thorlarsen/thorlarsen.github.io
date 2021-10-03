@@ -10,4 +10,4 @@ function writeFooter() {
   footer.innerHTML = "<div><p>&copy 2021 Thor Larsen | Web Frontend Dev II | BYU-Idaho</p></div>"
 } 
 
-window.addEventListener('load', writeFooter);
+addEventListener('load', writeFooter);
