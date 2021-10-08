@@ -29,9 +29,7 @@ function play(id) {
       }
     }
     catCount++;
-    //debug
-    //alert(catCount);
-    //
+    
     if (catCount < 9) {
     changePlayer();
   } else {
