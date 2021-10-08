@@ -4,27 +4,40 @@ let player = x;
 let xcount = 0;
 let ocount = 0;
 let isover = false;
+let catCount = 0;
 
 function resetBoard(){
   document.querySelectorAll(".block").forEach((block) => (block.textContent = ""));
   player = x;
   isover = false;
+  catCount = 0;
 }
 
 function play(id) {   
-  if (id.textContent != x && id.textContent != o) {
+  if (!isover && id.textContent != x && id.textContent != o) {
     id.innerHTML=player;
     if (check4winner(player)) {
       if (player==="X")
       {
-        alert("Player 1 Wins");
+        isover = true;
+        alert("X Wins");
       }
       else
       {
-        alert("Player 2 Wins");
+        isover = true;
+        alert("O Wins");
       }
     }
+    catCount++;
+    //debug
+    //alert(catCount);
+    //
+    if (catCount < 9) {
     changePlayer();
+  } else {
+    isover = true;
+    alert("Tie game")
+  }
   }
 }
 
