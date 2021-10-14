@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="Portfolio for WDD 330: Web Front-end Development II BYUI">
+    <title>Week 4: Dice</title>
+    <link href="../../css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <script src="../../js/main.js"></script>
+    
+</head>
+
+<body>
+    <main>
+
+    <h1>Dice as JS Objects</h1>
+    <div>  
+      <p>Click the button to roll one six sided die:</p>
+      <button id="onex6roll">One 6-sided die</button>
+      <div class="output"><p>You rolled: <span id="onex6out"></span></p></div>
+    </div>
+    <br>
+    <div>
+      <p>Click the button below to roll two six sided dice like in Monopoly:</p>
+      <button id="twox6roll">Two 6-sided dice</button>
+      <div class="output"><p>You rolled: <span id="twox6out"></span></p></div>
+    </div>
+    <br>
+    <div>
+      <p>Now we use DnD dice. We start with percentile dice. Typically, these rolls are done with two ten-sided dice. In our case, we are going 
+        to theorize using a 100 sided die instead.
+      </p>
+      <button id="d100roll">Percentile dice</button>
+      <div class="output"><p>You rolled: <span id="d100out"></span></p></div>
+    </div>
+    <br>
+    <div>
+      <p>We'll move on to the different sided dice of DnD.</p> 
+      <form>
+      <label for="nsides">Pick the number of sides: d</label>
+      <select name="nsides" id="nsides">
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="20">20</option>
+      </select>
+      <input  id="dstarx1roll">Roll 1 die</button>
+      <div class="output"><p>You rolled: <span id="dstarx1out"></span></p></div>
+    </div>
+
+    <br>
+    <br>
+    <span><a href="..">Go back</a> to the Portfolio</span>
+    </main>
+    <footer id="footer">
+        
+    </footer>
+</body>
+<script src="js/dice-control.js"></script>
+
+</html>
