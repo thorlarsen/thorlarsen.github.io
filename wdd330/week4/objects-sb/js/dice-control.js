@@ -24,6 +24,7 @@ function roll2X6() {
 }
 
 const percentDice = document.getElementById('d100roll');
+percentDice.addEventListener('touchend', rolld100);
 percentDice.addEventListener('click', rolld100);
 function rolld100() {
     const myPercentDice = new Dice(100);
