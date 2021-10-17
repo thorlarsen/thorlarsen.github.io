@@ -53,7 +53,7 @@ export default class Hike {
   showHikeList() {
     this.parentElement.innerHTML = '';
     renderHikeList(this.parentElement, this.getAllHikes());
-    this.addHikeListener();
+    
   }
 
   showOneHike(hikeName) {
@@ -62,19 +62,6 @@ export default class Hike {
     this.parentElement.appendChild(renderOneHikeFull(hike));
   }
 
-  addHikeListener() {
-    const childrenArray = Array.from(this.parentElement.children);
-    childrenArray.forEach(child => {
-      child.addEventListener('touchend', e => {
-        this.showOneHike(e.currentTarget.dataset.name);
-      });
-    });
-  }
-
-  //buildBackButton() {
-
-  //}
-
 }
 //end of class def
 
@@ -82,9 +69,11 @@ function renderOneHikeLight(hike) {
   const item = document.createElement("li");
 
   item.innerHTML = ` <h2>${hike.name}</h2>
-      <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
-      </div>
-      <div>
+    <div class="onehike">  
+      
+      <img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
+      
+      <div class="details">
         <div>
            <h3>Distance</h3>
            <p>${hike.distance}</p>
@@ -93,17 +82,17 @@ function renderOneHikeLight(hike) {
            <h3>Difficulty</h3>
            <p>${hike.difficulty}</p>
         </div>
-      </div>`;
-
+      </div>
+    </div>`;
     return item;
   }
 
 function renderOneHikeFull(hike) {
   const item = document.createElement("li");
 
-  item.innerHTML = ` <h2>${hike.name}</h2>
-  <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
-  </div>
+  item.innerHTML = ` 
+  <h2>${hike.name}</h2>
+  <img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}">
   <div>
     <div>
        <h3>Distance</h3>
