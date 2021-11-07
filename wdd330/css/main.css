@@ -12,6 +12,10 @@ h1, .title {
     font-size: 2em;
 }
 
+h2, .sub-title {
+    font-family: 'Roboto', sans-serif;
+}
+
 ul, li, span, p, .textbody {
     font-family: 'Open Sans', sans-serif;
 }
