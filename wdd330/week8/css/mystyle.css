@@ -1,0 +1,35 @@
+#buttons {
+    float: left;
+    width: 100%;
+    margin-left: -1.6%;
+    position: fixed;
+    bottom: 0;
+}
+.width50 {
+    float: left;
+    width: 49%;
+    border: 1px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.width50:hover {
+    cursor: pointer;
+}
+button:hover {
+    cursor: pointer; 
+}
+.width100 {
+    float: left;
+    width: 100%;
+}
+.ship {
+    font-size: 20px;
+}
+button {
+    max-width: 50px;
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+    text-align: bottom;
+}
