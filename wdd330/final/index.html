@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Final Project</title>
+</head>
+<body>
+  <div class=container>
+    <h1>My Daily Dashboard</h1>
+      <div id="weatherDiv">
+      
+          <button id="weatherBtn" class="add-button">Show Weather Forecast</button>
+      
+
+      <!-- The Modal -->
+      <div id="weatherModal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Current Weather</h3>
+        <div class="modal-current"></div>
+        <h3>5 Day Forecast</h3>
+        <div class="modal-fiveday"></div>
+        </div>
+      </div>
+    </div>
+    <div class="task-container">
+      <h2>My Todo List</h2>
+
+      <form class="todo-list">
+        <input type="text" class="todo-input" placeholder="Add a Task">
+        <button type="submit" id="taskbtn" class="add-button">Add</button>
+      </form>
+
+      <ul class="todo-items"></ul>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="js/todo.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>

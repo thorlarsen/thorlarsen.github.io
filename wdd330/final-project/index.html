@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Thor Larsen">
+    <meta name="description" content="Portfolio for WDD 330: Web Front-end Development II BYUI">
+    <title>Final Project</title>
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans" rel="stylesheet">
+    <!-- <script src="../js/main.js"></script> -->
+    
+</head>
+
+<body>
+  <h1>My Daily Dashboard</h1>
+  <div id="weatherDiv">
+    <button id="weatherBtn">Show Weather Forecast</button>
+    <!-- The Modals -->
+    <div id="weatherModal" class="modal">
+      <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Your Weather</p>
+      </div>
+    </div>
+  </div>
+  <h2>My ToDo List</h2>
+  <ul id="tasks"> </ul>
+    <div class="info">
+      <!-- <div id="num-task">0 tasks left</div> -->
+      <input class="tab selected-tab" type="button" id="all" value="All">
+      <input class="tab" type="button" id="active" value="Active">
+      <input class="tab" type="button" id="complete" value="Completed">
+      </div>
+    </div>
+    <div id="footer-app">
+    <input type="text" id="new-task" placeholder="New Task">
+    <button type="submit" id="add">+</button>
+    </div>
+  </div>
+</body>
+<script src="js/weather.js"></script>
+<script src="js/app.js" type="module"></script>
+</html>
